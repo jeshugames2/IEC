@@ -338,7 +338,7 @@
 					<div class="header-wrap" style="width: 100%;">
 
 
-								<a href="#home"><img src="img/MPSTME logo.png" alt="NMIMS MPSTME" class="nmlogo"></a>
+								<a href="#home"><img src="https://static-collegedunia.com/public/college_data/images/logos/1474093069nmims%20logo.jpg" alt="NMIMS MPSTME" class="nmlogo"></a>
 								<!--<div class="mpstme">MUKESH PATEL SCHOOL OF<BR/>TECHNOLOGY MANAGEMENT<BR/>& ENGINEERING</div>-->
 
 							<!--<div class="ieclogo"><img src="img/insta logo.png" class="rightiec"></div>-->
