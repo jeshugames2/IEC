@@ -38,6 +38,8 @@
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/animate.css">
 
 			<style type="text/css">
 				.default-header {
@@ -205,13 +207,13 @@
 	height: auto;
 	width: auto;
 }
-#home{
-	background-image: url('./img/IMG_0035.jpg');
+#home .overlay-bg{
+	background: #263f6b;
 	opacity: 1.0;
-	max-height: auto;
+	height: auto;
 	max-width: auto;
 }
-#home2{
+/*#home2{
 	background-image: url('./img/edit 131-3-86.jpg');
 	opacity: 1.0;
 	max-height: auto;
@@ -234,7 +236,34 @@
 	opacity: 1.0;
 	max-height: auto;
 	max-width: auto;
+}*/
+.map{
+	height: 100%;
+	width: 100%;
+	border:0;
 }
+#contact{
+	padding-top: 20px;
+}
+.item{
+	height: 450px;
+	width: 100%;
+}
+.item img{
+	max-height: 100%;
+	max-width: 100%;
+}
+#emailid{
+	font-size: 20px;
+	padding-top: 10%;
+	text-align: center;
+	padding-left: 5%;
+}
+#number{
+	font-size: 17px;
+	padding-top: 5%;
+}
+
 </style>
 		</head>
 		<body>
@@ -244,7 +273,7 @@
 			error_reporting(0);
 			error_reporting(E_ERROR | E_WARNING | E_PARSE);
 			error_reporting(E_ALL);
-			ini_set("error_reporting", E_ALL);			
+			ini_set("error_reporting", E_ALL);
 			error_reporting(E_ALL & ~E_NOTICE);
 			?>
 
@@ -260,10 +289,10 @@
 			<script type="text/javascript">
 				function navfunchome() {
 					document.getElementById('home').style.display = "block";
-					document.getElementById('home2').style.display = "block";
+					/*document.getElementById('home2').style.display = "block";
 					document.getElementById('home3').style.display = "block";
 					document.getElementById('home4').style.display = "block";
-					document.getElementById('home5').style.display = "block";
+					document.getElementById('home5').style.display = "block";*/
 					document.getElementById('functionalities').style.display = "none";
 					document.getElementById('speaker').style.display = "none";
 					document.getElementById('upcoming').style.display = "none";
@@ -272,10 +301,10 @@
 				}
 				function navfuncfunctionalities() {
 					document.getElementById('home').style.display = "none";
-					document.getElementById('home2').style.display = "none";
-					document.getElementById('home3').style.display = "none";
-					document.getElementById('home4').style.display = "none";
-					document.getElementById('home5').style.display = "none";
+					/*document.getElementById('home2').style.display = "block";
+					document.getElementById('home3').style.display = "block";
+					document.getElementById('home4').style.display = "block";
+					document.getElementById('home5').style.display = "block";*/
 					document.getElementById('functionalities').style.display = "block";
 					document.getElementById('speaker').style.display = "none";
 					document.getElementById('upcoming').style.display = "none";
@@ -284,10 +313,10 @@
 				}
 				function navfuncspeaker() {
 					document.getElementById('home').style.display = "none";
-					document.getElementById('home2').style.display = "none";
-					document.getElementById('home3').style.display = "none";
-					document.getElementById('home4').style.display = "none";
-					document.getElementById('home5').style.display = "none";
+					/*document.getElementById('home2').style.display = "block";
+					document.getElementById('home3').style.display = "block";
+					document.getElementById('home4').style.display = "block";
+					document.getElementById('home5').style.display = "block";*/
 					document.getElementById('functionalities').style.display = "none";
 					document.getElementById('speaker').style.display = "block";
 					document.getElementById('upcoming').style.display = "none";
@@ -296,10 +325,10 @@
 				}
 				function navfuncupcoming() {
 					document.getElementById('home').style.display = "none";
-					document.getElementById('home2').style.display = "none";
-					document.getElementById('home3').style.display = "none";
-					document.getElementById('home4').style.display = "none";
-					document.getElementById('home5').style.display = "none";
+					/*document.getElementById('home2').style.display = "block";
+					document.getElementById('home3').style.display = "block";
+					document.getElementById('home4').style.display = "block";
+					document.getElementById('home5').style.display = "block";*/
 					document.getElementById('functionalities').style.display = "none";
 					document.getElementById('speaker').style.display = "none";
 					document.getElementById('upcoming').style.display = "block";
@@ -308,10 +337,10 @@
 				}
 				function navfuncaboutus() {
 					document.getElementById('home').style.display = "none";
-					document.getElementById('home2').style.display = "none";
-					document.getElementById('home3').style.display = "none";
-					document.getElementById('home4').style.display = "none";
-					document.getElementById('home5').style.display = "none";
+					/*document.getElementById('home2').style.display = "block";
+					document.getElementById('home3').style.display = "block";
+					document.getElementById('home4').style.display = "block";
+					document.getElementById('home5').style.display = "block";*/
 					document.getElementById('functionalities').style.display = "none";
 					document.getElementById('speaker').style.display = "none";
 					document.getElementById('upcoming').style.display = "none";
@@ -320,10 +349,10 @@
 				}
 				function navfuncsponsors() {
 					document.getElementById('home').style.display = "none";
-					document.getElementById('home2').style.display = "none";
-					document.getElementById('home3').style.display = "none";
-					document.getElementById('home4').style.display = "none";
-					document.getElementById('home5').style.display = "none";
+					/*document.getElementById('home2').style.display = "block";
+					document.getElementById('home3').style.display = "block";
+					document.getElementById('home4').style.display = "block";
+					document.getElementById('home5').style.display = "block";*/
 					document.getElementById('functionalities').style.display = "none";
 					document.getElementById('speaker').style.display = "none";
 					document.getElementById('upcoming').style.display = "none";
@@ -338,7 +367,7 @@
 					<div class="header-wrap" style="width: 100%;">
 
 
-								<a href="#home"><img src="https://static-collegedunia.com/public/college_data/images/logos/1474093069nmims%20logo.jpg" alt="NMIMS MPSTME" class="nmlogo"></a>
+								<a href="#home"><img src="img/MPSTME logo.png" alt="NMIMS MPSTME" class="nmlogo"></a>
 								<!--<div class="mpstme">MUKESH PATEL SCHOOL OF<BR/>TECHNOLOGY MANAGEMENT<BR/>& ENGINEERING</div>-->
 
 							<!--<div class="ieclogo"><img src="img/insta logo.png" class="rightiec"></div>-->
@@ -362,12 +391,12 @@
 
 			<!-- Start banner Area -->
 			<!--Homepage Carousel (Shashwat)-->
-			<div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval= "3000">
-				<!--ol class="carousel-indicators">
+			<!--div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval= "3000">
+				<!ol class="carousel-indicators">
     			<li data-target="home-carousel" data-slide-to="0" class="active"></li>
     			<li data-target="home-carousel" data-slide-to="1"></li>
     			<li data-target="home-carousel" data-slide-to="2"></li>
-			  </ol-->
+			  </ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 			<section class="banner-area relative" id="home">
@@ -376,7 +405,7 @@
 
 						<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
 							<div class="banner-content col-lg-6 col-md-12">
-								<!--h1>
+								<h1>
 									Our Next Event Starts in
 								</h1>
 				        		<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
@@ -397,7 +426,7 @@
 				                        <div class="smalltext">Seconds</div>
 				                    </div>
 
-				                </div-->
+				                </div>
 							</div>
 						</div>
 				</div>
@@ -410,7 +439,7 @@
 
 				<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
 					<div class="banner-content col-lg-6 col-md-12">
-						<!--h1>
+						<h1>
 							Our Next Event Starts in
 						</h1>
 								<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
@@ -431,7 +460,7 @@
 														<div class="smalltext">Seconds</div>
 												</div>
 
-										</div-->
+										</div>
 					</div>
 				</div>
 		</div>
@@ -445,7 +474,7 @@
 
 		<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
 			<div class="banner-content col-lg-6 col-md-12">
-				<!--h1>
+				<h1>
 					Our Next Event Starts in
 				</h1>
 						<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
@@ -466,7 +495,7 @@
 												<div class="smalltext">Seconds</div>
 										</div>
 
-								</div-->
+								</div>
 			</div>
 		</div>
 </div>
@@ -480,7 +509,7 @@
 
 	<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
 		<div class="banner-content col-lg-6 col-md-12">
-			<!--h1>
+			<h1>
 				Our Next Event Starts in
 			</h1>
 					<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
@@ -501,7 +530,7 @@
 											<div class="smalltext">Seconds</div>
 									</div>
 
-							</div-->
+							</div>
 		</div>
 	</div>
 </div>
@@ -515,7 +544,7 @@
 
 	<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
 		<div class="banner-content col-lg-6 col-md-12">
-			<!--h1>
+			<h1>
 				Our Next Event Starts in
 			</h1>
 					<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
@@ -536,7 +565,7 @@
 											<div class="smalltext">Seconds</div>
 									</div>
 
-							</div-->
+							</div>
 		</div>
 	</div>
 </div>
@@ -544,15 +573,57 @@
 </section>
 </div>
 		</div>
-		<!--a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+		<a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a-->
-	</div>
+  </a>
+</div-->
+
+	<section class="banner-area relative" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+				<div class="row fullscreen" style="height: 915px; padding-top: 3%">
+					<div class="col-md-12">
+					<div class="owl-carousel owl-theme">
+  					<div class='item'> <img src="img/IMG_0035.JPG" alt="" class='img-responsive'> </div>
+  					<div class='item'> <img src="img/_DSC0014.jpg" alt="" class='img-responsive'> </div>
+  					<div class='item'> <img src="img/IMG_9329-2.jpg" alt="" class='img-responsive'> </div>
+  					<div class='item'> <img src="img/IMG-20180314-WA0006.jpg" alt="" class='img-responsive'> </div>
+  					<div class='item'> <img src="img/edit 131-3-86.jpg" alt="" class='img-responsive'> </div>
+				</div>
+			</div>
+
+					<!--div class="banner-content col-lg-6 col-md-12">
+						<h1>
+							Our Next Event Starts in
+						</h1>
+								<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
+												<div class="clockinner">
+														<span class="days"></span>
+														<div class="smalltext">Days</div>
+												</div>
+												<div class="clockinner">
+														<span class="hours"></span>
+														<div class="smalltext">Hours</div>
+												</div>
+												<div class="clockinner">
+														<span class="minutes"></span>
+														<div class="smalltext">Minutes</div>
+												</div>
+												<div class="clockinner">
+														<span class="seconds"></span>
+														<div class="smalltext">Seconds</div>
+												</div>
+
+										</div>
+					</div-->
+				</div>
+		</div>
+	</section>
 			<!-- End banner Area -->
 
 			<!-- Start Inceptio Area-->
@@ -570,63 +641,63 @@
 					if(y.style.display === "none"){
 						y.style.display = "block";
 					}
-					else { y.style.display = "none"; 
+					else { y.style.display = "none";
 				}}
 				function showInceptio3(){
 					var z = document.getElementById("InceptioInfo3");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio4(){
 					var z = document.getElementById("InceptioInfo4");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio5(){
 					var z = document.getElementById("InceptioInfo5");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio6(){
 					var z = document.getElementById("InceptioInfo6");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio7(){
 					var z = document.getElementById("InceptioInfo7");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio8(){
 					var z = document.getElementById("InceptioInfo8");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio9(){
 					var z = document.getElementById("InceptioInfo9");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showInceptio10(){
 					var z = document.getElementById("InceptioInfo10");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 			</script>
 
@@ -738,49 +809,49 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 					if(y.style.display === "none"){
 						y.style.display = "block";
 					}
-					else { y.style.display = "none"; 
+					else { y.style.display = "none";
 				}}
 				function showEventInfo3(){
 					var z = document.getElementById("showinfo3");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showEventInfo4(){
 					var z = document.getElementById("showinfo4");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showEventInfo5(){
 					var z = document.getElementById("showinfo5");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showEventInfo6(){
 					var z = document.getElementById("showinfo6");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showEventInfo7(){
 					var z = document.getElementById("showinfo7");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 				function showEventInfo8(){
 					var z = document.getElementById("showinfo8");
 					if(z.style.display === "none"){
 						z.style.display = "block";
 					}
-					else { z.style.display = "none"; 
+					else { z.style.display = "none";
 				}}
 			</script>
 
@@ -799,7 +870,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 							<div class="single-speaker">
 								<div class="content">
 								    <a target="_blank" onclick="showEventInfo();">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto my-auto" src="img/edit 131-3-46.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -813,7 +884,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 							<div class="single-speaker">
 								<div class="content">
 								    <a onclick="showEventInfo2();" target="_blank">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_3170.JPG" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -826,7 +897,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 							<div class="single-speaker">
 								<div class="content">
 								   <a onclick="showEventInfo3();" target="_blank">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/_MG_9891.JPG" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -839,7 +910,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 							<div class="single-speaker">
 								<div class="content">
 								    <a onclick="showEventInfo4();" target="_blank">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_0217.JPG" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -851,13 +922,12 @@ A speaker session was conducted with the guests-Shikhar Vaidya and Smriti Dubey,
 </p>
 						</div>
 					</div>
-					<br></br>
-					<div class="row">
+					<div class="row" style="padding-top: 15px">
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
 								    <a onclick="showEventInfo5();" target="_blank">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_0010.JPG" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -871,7 +941,7 @@ It is indeed a gateway to the financial jungle!</p>
 							<div class="single-speaker">
 								<div class="content">
 								    <a onclick="showEventInfo6();" target="_blank">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/_DSC0001.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -884,7 +954,7 @@ It is indeed a gateway to the financial jungle!</p>
 							<div class="single-speaker">
 								<div class="content">
 								    <a onclick="showEventInfo7();" data-toggle="lightbox">
-								      <div class="content-overlay"></div>
+								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_2949.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
 								    </a>
@@ -899,7 +969,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 							<div class="single-speaker">
 								<div class="content">
 										<a onclick="showEventInfo8();" target="_blank">
-											<div class="content-overlay"></div>
+											<!--div class="content-overlay"></div-->
 											 <img class="content-image img-fluid d-block mx-auto" src="img/_DSC0058.jpg" alt="">
 												<div class="content-details fadeIn-bottom"></div>
 										</a>
@@ -1004,7 +1074,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 			</script>
 
 			<section class="events-area section-gap" id="upcoming" style="display: none;">
-				
+
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-8 pb-80 header-text">
@@ -1068,7 +1138,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 									<input type="text" name="midformidea" id="midformidea" placeholder="Idea..." style="margin-top: 4px;"><br/>
 									<button id="midformbutton" name="midformbutton" class="buttonsub" onclick="bottomform2();">Submit</button>
 								</div>
-							
+
 							<script type="text/javascript">
 									function bottomform2(){
 
@@ -1123,7 +1193,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 									<input type="text" name="midformidea2" id="midformidea2" placeholder="Skill..." style="margin-top: 4px;"><br/>
 									<button id="midformbutton2" name="midformbutton2" class="buttonsub" onclick="bottomform22();">Submit</button>
 								</div>
-							
+
 							<script type="text/javascript">
 									function bottomform22(){
 
@@ -1172,12 +1242,25 @@ The key purpose was to help students with creative and innovative ideas by takin
 								//echo "<html><script>window.location.href = winloc;</script></html>";
 
 						?>
-						
+
 							<button class="buttonsub2" id="midbutton" onclick="formshow();">I have an idea</button>
 							<button class="buttonsub3" id="midbutton2" onclick="formshow2();">I have a skill</button>
 
 						</div>
 						</div>
+						<div class="row">
+							<div class="col-md-3 justify-content-center text-center">
+								<h4 id='contact' style="padding-right: 5px">Contact</h4>
+								<p id='number'><strong>Niharika:</strong> +91 9619176070</p>
+								<p id='number'><strong>Simran:</strong> +91 7045646019</p>
+						</div>
+						<div class="col-md-6 justify-content-center">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.949225132972!2d72.83535431508926!3d19.10988328706858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0xe0b9538d623ac5d2!2sMukesh+Patel+School+Of+Technology+Management+%26+Engineering!5e0!3m2!1sen!2sin!4v1538244050358" allowfullscreen class='map'></iframe>
+					</div>
+					<div class="col-md-3 justify-content-center text-center">
+					<h4 id='contact'>Email</h4>
+					<p id='emailid'>iec.nmims@gmail.com</p>
+				</div>
 					</div>
 				</div>
 				</div>
@@ -1503,9 +1586,37 @@ The key purpose was to help students with creative and innovative ideas by takin
 			</script-->
 
 			<script type="text/javascript">
-			$('.carousel').carousel({
+			/*$('.carousel').carousel({
  pause: "false"
+});*/
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
 });
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+		autoplay:true,
+		autoplayTimeout:2000,
+		autoplaySpeed:300,
+		animateIn:'fadeInRightBig',
+		animateOut:'fadeOutLeftBig',
+		singleItem:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        600:{
+            items:1,
+            nav:false,
+        },
+        1000:{
+            items:1,
+            nav:false,
+        }
+    }
+})
       </script>
 		</body>
 	</html>
