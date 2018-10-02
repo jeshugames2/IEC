@@ -177,31 +177,31 @@
 
 .neww1 {
 	display: inline-block;
-	
+
 }
 .neww2{
 	display: inline-block;
-	
+
 }
 .neww3{
 	display: inline-block;
-	
+
 }
 .neww4{
 	display: inline-block;
-	
+
 }
 .neww5{
 	display: inline-block;
-	
+
 }
 .neww6{
 	display: inline-block;
-	
+
 }
 .neww7{
 	display: inline-block;
-	
+
 }
 .menu-bar {
 	position: absolute;
@@ -279,7 +279,7 @@
 	}
 .hide{
 	margin-top: 10px;
-} 
+}
 .allnav{
 	position: absolute;
 	right: 15px;
@@ -383,17 +383,17 @@
 
 			<!-- Start Header Area -->
 			<header class="default-header" style="width: 100%;">
-				
+
 				<img src="img/MPSTME logo.png" alt="NMIMS MPSTME" class="nmlogo">
-				
+
 				<div class="container" >
-					
+
 					<div class="header-wrap">
-						
-								
-							<div class="main-menubar d-flex align-items-center divright">
+
+
+							<div id="mediaForMenu" class="main-menubar d-flex align-items-center divright">
 								<nav class="hide justify-content-center text-center">
-									<div class="allnav justify-content-center text-center">
+									<div class="allnav justify-content-center text-center" id="MediaForMeniContnet">
 									<div class="neww1"><a href="#home" id="navhome" onclick="navfunchome();">Home</a></div>
 									<div class="neww2"><a href="#speaker" id="navspeaker" onclick="navfuncspeaker();">Events</a></div>
 									<div class="neww3"><a href="#functionalities" id="navfunctionalities" onclick="navfuncfunctionalities();">Inceptio</a></div>
