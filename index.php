@@ -65,15 +65,17 @@
 					display: inline-block;
 				}*/
 				.nmlogo {
-					height: 20%;
-					width: 20%;
+					height: 30.5px;
+					width: 222px;
+					margin-left: 15px;
 				}
 				.rightiec {
+					margin-right: 0px;
+					height: 60px;
+					width: 60px;
 					position: absolute;
-					right: 18px;
-					height: 75%;
-					width: 4.5%;
-					top: 10px;
+					right: 13px;
+					top: 6px;
 				}
 				.ieclogo {
 					position: absolute;
@@ -175,25 +177,31 @@
 
 .neww1 {
 	display: inline-block;
+	
 }
 .neww2{
 	display: inline-block;
+	
 }
 .neww3{
 	display: inline-block;
+	
 }
 .neww4{
 	display: inline-block;
+	
 }
 .neww5{
 	display: inline-block;
+	
 }
 .neww6{
 	display: inline-block;
+	
 }
 .neww7{
 	display: inline-block;
-	width: 10%;
+	
 }
 .menu-bar {
 	position: absolute;
@@ -263,7 +271,19 @@
 	font-size: 17px;
 	padding-top: 5%;
 }
+.divright{
+	margin-right: 0px;
+}
+.menu-bar{
 
+	}
+.hide{
+	margin-top: 10px;
+} 
+.allnav{
+	position: absolute;
+	right: 15px;
+	background: white;
 </style>
 		</head>
 		<body>
@@ -362,17 +382,18 @@
 			</script>
 
 			<!-- Start Header Area -->
-			<header class="default-header">
-				<div class="container" style="width: 100%;">
-					<div class="header-wrap" style="width: 100%;">
-
-
-								<a href="#home"><img src="img/MPSTME logo.png" alt="NMIMS MPSTME" class="nmlogo"></a>
-								<!--<div class="mpstme">MUKESH PATEL SCHOOL OF<BR/>TECHNOLOGY MANAGEMENT<BR/>& ENGINEERING</div>-->
-
-							<!--<div class="ieclogo"><img src="img/insta logo.png" class="rightiec"></div>-->
-							<div class="main-menubar d-flex align-items-center">
-								<nav class="hide" style="width: 100%;">
+			<header class="default-header" style="width: 100%;">
+				
+				<img src="img/MPSTME logo.png" alt="NMIMS MPSTME" class="nmlogo">
+				
+				<div class="container" >
+					
+					<div class="header-wrap">
+						
+								
+							<div class="main-menubar d-flex align-items-center divright">
+								<nav class="hide justify-content-center text-center">
+									<div class="allnav justify-content-center text-center">
 									<div class="neww1"><a href="#home" id="navhome" onclick="navfunchome();">Home</a></div>
 									<div class="neww2"><a href="#speaker" id="navspeaker" onclick="navfuncspeaker();">Events</a></div>
 									<div class="neww3"><a href="#functionalities" id="navfunctionalities" onclick="navfuncfunctionalities();">Inceptio</a></div>
@@ -380,12 +401,13 @@
 									<div class="neww5"><a href="#aboutus" id="navaboutus" onclick="navfuncaboutus();">About us</a></div>
 									<div class="neww6"><a href="https://mpstmeecell.wordpress.com/" id="navblog">Blog</a></div>
 									<div class="neww7"><a href="#upsponsors" id="navsponsors" onclick="navfuncsponsors();">Sponsors</a></div>
+								</div>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-							</div><img src="img/FINAL LOGO.png" class="rightiec">
-
+							</div>
 					</div>
 				</div>
+			</div><img src="img/insta logo.png" class="rightiec">
 			</header>
 			<!-- End Header Area -->
 
@@ -706,88 +728,88 @@
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-8 pb-80 header-text">
 							<h1>INCEPTIO 2.0</h1>
-							<p>
+							<span>
 								An Innovation and Entrepreneurship Carnival was held on 10th March 2018 as a joint effort of the Entrepreneurship Cell and Innovation Cell of NMIMS’ MPSTME.
-							</p>
+							</span>
 						</div>
 					</div>
-					<div class="row">
-						<div class="sigle-facilities col-lg col-md-12 pb-100">
+					<div class="row" style="padding: 0px;">
+						<div class="sigle-facilities col-md-12 pb-100">
 							<a target="_blank" onclick="showInceptio();"><img class="inceptio-image img-fluid d-block mx-auto pb-40" src="img/IMG_0372.jpg" alt="Crowd Funding"></a>
 							<h3>Virtual Crowd Funding</h3><br>
-							<p id="InceptioInfo" style="display: none;">
+							<span id="InceptioInfo" style="display: none;">
 								This was the flagship event of Inceptio 2018 wherein teams were to present a brief pitch of their ideas in front of expert panelists and the audience, who would be equipped with a certain amount of funds online through our exclusive site. The panelists for the evening, who had also judged the Live Projects Competition prior to this, were Mr. Murtuza Haryanawalla, Mr. Nikhil Karkera, Dr. Kushal Sanghvi, Ms. Ruchika Gupta from Uber, Mr. Atul Verma the Marketing Head for Future Group, Ms. Palomi from our Crowdfunding partner Ketto, and our esteemed faculties Dr. Anuja Agarwal and Dr. Seema Shah.
 The team which acquired highest and the second highest virtual funds won a cash prize of INR 11,000 and INR 4,000 respectively. The 11 shortlisted teams were also awarded Certificates of Participation.
-							</p>
+							</span>
 						</div>
 					</div>
 					<div class="row">
-						<div class="sigle-facilities col-lg-4 col-md-6 pb-40">
+						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio2();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_0053.jpg" alt=""></a>
 							<h4>InceptioTalks</h4>
-							<p id="InceptioInfo2" style="display: none;">
+							<span id="InceptioInfo2" style="display: none;">
 								The guest speaker for this session was Mr. Praveen Wadalkar, Co-founder and CEO of Techizer Tech Solutions Pvt. Ltd. At InceptioTalks, Mr. Praveen Wadalkar spoke in depth about his life and how hardships from his childhood, taking risks as a young adult, and creating a niche for himself in a competitive business field were all challenges which made him struggle but also paid the dividend of success.
-							</p>
+							</span>
 						</div>
-						<div class="sigle-facilities col-lg-4 col-md-6 pb-40">
+						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio3();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_3112.jpg" alt=""></a>
 							<h4>Startup Showcase</h4>
-							<p id="InceptioInfo3" style="display: none;">
+							<span id="InceptioInfo3" style="display: none;">
 								This event aimed to introduce emerging start-ups in the community and help them increase their visibility by setting up stalls for college students to visit and purchase from. Due to this event, the participating students got to interact and share their ideas with young entrepreneurs all at one place.
-							</p>
+							</span>
 						</div>
-						<div class="sigle-facilities col-lg-4 col-md-6 pb-40">
+						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio4();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/_DSC0033.jpg" alt=""></a>
 							<h4>Ideation</h4>
-							<p id="InceptioInfo4" style="display: none;">
+							<span id="InceptioInfo4" style="display: none;">
 								The speaker for this workshop was Mr. Nikhil Karkera, Consultant at Oracle Financial Services and Former Intern at Housing.com who talked about idea generation and discussed the communication, planning and modeling phases for the same.
 The participants were guided through the process of idea generation and were eager to see how their ideas would work. Mr Nikhil Karkera was interactive, and kept the audience engaged throughout the session, thus making this popular workshop a grand success.
-							</p>
+							</span>
 						</div>
-						<div class="sigle-facilities col-lg-4 col-md-6 pb-40">
+						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio5();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_7216-2.jpg" alt=""></a>
 							<h4>Idea Validation</h4>
-							<p id="InceptioInfo5" style="display: none;">
+							<span id="InceptioInfo5" style="display: none;">
 								The speaker for this workshop was Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’, Mentor at IIM-A and an experienced academician and speaker who has has mentored over 100 companies.
 First a brief Q&A session was held about the life of an entrepreneur, after which Dr. Kaustubh Dhargalkar invited the participants to pitch their ideas for a startup.
-							</p>
+							</span>
 						</div>
-						<div class="sigle-facilities col-lg-4 col-md-6 pb-40">
+						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio6();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_9392-2.jpg" alt=""></a>
 							<h4>B-plan Writing</h4>
-							<p id="InceptioInfo6" style="display: none;">
+							<span id="InceptioInfo6" style="display: none;">
 								The purpose of this workshop was well achieved by Mr. Haryanawalla as he not only talked about the significance of a business plan but also guided the participants through the process of developing a business model for their startups. He also explained in depth the structure, strategy and the right policies to adopt to keep oneself on track while achieving business goals.
-							</p>
+							</span>
 						</div>
-						<div class="sigle-facilities col-lg-4 col-md-6 pb-40">
+						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio7();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_3033.jpg" alt=""></a>
 							<h4>Digital Marketing</h4>
-							<p id="InceptioInfo7" style="display: none;">
+							<span id="InceptioInfo7" style="display: none;">
 								The speaker for this workshop was Dr. Kushal Sanghvi, Business Head at Reliance Entertainment and Digital and one of the top 50 CMOs of India. The Digital Marketing Workshop was a great session for both the audience and the speaker. In the session, Dr. Sanghvi used various means to convey knowledge to the students on how to create brand value, and a unique niche for their product so as to optimize marketing strategies
-							</p>
+							</span>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio8();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/_DSC0065.jpg" alt=""></a>
 							<h4>ThinkTank</h4>
-							<p id="InceptioInfo8" style="display: none;">
+							<span id="InceptioInfo8" style="display: none;">
 								A competition where Companies namely Thomas Cook, Catapooolt, Eden Infosol, BioPronut, Sosyo and Bachelor Housing provided problem statements from their domains and the participating students had to come up with viable solutions which could be implemented by these companies, in order to win the cash prize of INR 5000.
 ThinkTank provided students a unique opportunity to learn and analyze the problems faced by companies and devise practical solutions for the same.
-							</p>
+							</span>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio9();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_0197.jpg" alt=""></a>
 							<h4>BizQuiz</h4>
-							<p id="InceptioInfo9" style="display: none;">
+							<span id="InceptioInfo9" style="display: none;">
 								This challenging quiz was conducted in 2 stages and it tested the all-round awareness, knowledge, business acumen and intelligence of the participants. The team with the highest score was awarded a cash prize of INR 5000. All in all- BizQuiz was a fun-filled, challenging quiz for the best minds from across the city.
-							</p>
+							</span>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
 							<a target="_blank" onclick="showInceptio10();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_9326-2.jpg" alt=""></a>
 							<h4>Live Projects Competition</h4>
-							<p id="InceptioInfo10" style="display: none;">
+							<span id="InceptioInfo10" style="display: none;">
 								The purpose of this competition was to give the students of MPSTME a platform to showcase their innovative ideas and projects developed by them as well as encouraging discussions, interactions and exchange of newer ideas.
 Projects showcased included hydroponically grown plants, drone, collision detectors, data mapped vehicle to trace a particular path, electrically controlled skateboard, helmets with wipers for rains, a comprehensive event management system, etc. The competition consisted of the judges and the audience voting for their favorite project and the team with the maximum votes was awarded a cash prize of INR 5000.
-							</p>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -877,8 +899,8 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								 </div>
 							</div>
 						  	<h2>Enigma</h2>
-						  	<p id="showinfo" style="display: none;">With more than 180 students participating in Enigma, and contending for first and second place, the rewards for the same being a cash prize of Rs. 1000 and gift vouchers from our sponsors-McDonald’s, Titan and Bachelor Housing worth Rs. 1000 respectively, the main purpose of this event was to present a topic as serious as business and entrepreneurship in an interactive and enjoyable way through games and competitions
-</p>
+						  	<span id="showinfo" style="display: none;">With more than 180 students participating in Enigma, and contending for first and second place, the rewards for the same being a cash prize of Rs. 1000 and gift vouchers from our sponsors-McDonald’s, Titan and Bachelor Housing worth Rs. 1000 respectively, the main purpose of this event was to present a topic as serious as business and entrepreneurship in an interactive and enjoyable way through games and competitions
+</span>
 						</div>
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
@@ -891,7 +913,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								 </div>
 							</div>
 						  	<h2>Orientation</h2>
-						  	<p id="showinfo2" style="display: none;">An interactive seminar to inform the student body about the vision and mission of the Innovation and Entrepreneurship Cell. The key purpose of the orientation was to introduce IEC as a cell to the student body, especially to the first year students of MPSTME. Particular emphasis was laid on the first collaboration between the two Cells, which resulted in a mammoth fest called Inceptio, now our flagship occurrence.</p>
+						  	<span id="showinfo2" style="display: none;">An interactive seminar to inform the student body about the vision and mission of the Innovation and Entrepreneurship Cell. The key purpose of the orientation was to introduce IEC as a cell to the student body, especially to the first year students of MPSTME. Particular emphasis was laid on the first collaboration between the two Cells, which resulted in a mammoth fest called Inceptio, now our flagship occurrence.</span>
 						</div>
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
@@ -904,7 +926,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								 </div>
 							</div>
 						  	<h2>IPL Auctions</h2>
-						  	<p id="showinfo3" style="display: none;">An event enjoyed by the cricket maniacs of MPSTME, IPL Auctions are held every year. This event was held in two stages with the first stage acting as a qualifying round and consisted of two quizzes- the cricket quiz and the business quiz. The second stage was IPL Auctions wherein each team had a budget within which they had to buy cricket players and form their IPL teams following the traditional bidding method. </p>
+						  	<span id="showinfo3" style="display: none;">An event enjoyed by the cricket maniacs of MPSTME, IPL Auctions are held every year. This event was held in two stages with the first stage acting as a qualifying round and consisted of two quizzes- the cricket quiz and the business quiz. The second stage was IPL Auctions wherein each team had a budget within which they had to buy cricket players and form their IPL teams following the traditional bidding method. </span>
 						</div>
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
@@ -917,12 +939,12 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								 </div>
 							</div>
 						  	<h2>Redesyn</h2>
-						  	<p id="showinfo4" style="display: none;">This event was named after and dedicated to a startup called Redesyn, an apparel e-commerce service which curates Vegan and PETA approved designer clothing.
+						  	<span id="showinfo4" style="display: none;">This event was named after and dedicated to a startup called Redesyn, an apparel e-commerce service which curates Vegan and PETA approved designer clothing.
 A speaker session was conducted with the guests-Shikhar Vaidya and Smriti Dubey, the co-founders of Redesyn, who talked about their journey as entrepreneurs and the hardships they overcame in making Redesyn what it is today.
-</p>
+</span>
 						</div>
 					</div>
-					<div class="row" style="padding-top: 15px">
+					<div class="row" style="padding-top: 3px">
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
@@ -934,8 +956,8 @@ A speaker session was conducted with the guests-Shikhar Vaidya and Smriti Dubey,
 								 </div>
 							</div>
 						  	<h2>Converge</h2>
-						  	<p id="showinfo5" style="display: none;">The purpose of Converge was to make the students of MPSTME realise that there is more to the corporate world than what meets the eye and to act as a bridge between the students and the corporate world. In this informative session, students learnt all about derivative strategies and an in-depth Q&A session where you can cleared all doubts about the sector, it's various opportunities and challenges.
-It is indeed a gateway to the financial jungle!</p>
+						  	<span id="showinfo5" style="display: none;">The purpose of Converge was to make the students of MPSTME realise that there is more to the corporate world than what meets the eye and to act as a bridge between the students and the corporate world. In this informative session, students learnt all about derivative strategies and an in-depth Q&A session where you can cleared all doubts about the sector, it's various opportunities and challenges.
+It is indeed a gateway to the financial jungle!</span>
 						</div>
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
@@ -948,7 +970,7 @@ It is indeed a gateway to the financial jungle!</p>
 								 </div>
 							</div>
 						  	<h2>Idea Development</h2>
-						  	<p id="showinfo6" style="display: none;">The key purpose of this workshop was to inspire the students by explaining to them how ideas can be improved and developed. This purpose was well achieved as both the guest speakers enthralled and motivated the students by speaking about idea development in startups and entrepreneurship. The first event of the Innovation Cell, was a huge hit due to the speaker session with guest speakers Dr. Devesh Chawla, CEO of Chatur Ideas and Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’.</p>
+						  	<span id="showinfo6" style="display: none;">The key purpose of this workshop was to inspire the students by explaining to them how ideas can be improved and developed. This purpose was well achieved as both the guest speakers enthralled and motivated the students by speaking about idea development in startups and entrepreneurship. The first event of the Innovation Cell, was a huge hit due to the speaker session with guest speakers Dr. Devesh Chawla, CEO of Chatur Ideas and Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’.</span>
 						</div>
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
@@ -961,9 +983,9 @@ It is indeed a gateway to the financial jungle!</p>
 								 </div>
 							</div>
 						  	<h2>IC Resolutions</h2>
-						  	<p id="showinfo7" style="display: none;">IC Resolutions was a year round campaign aiming to nurture startup and project ideas of students with the motto being ‘Turn your resolutions to revelations’.
+						  	<span id="showinfo7" style="display: none;">IC Resolutions was a year round campaign aiming to nurture startup and project ideas of students with the motto being ‘Turn your resolutions to revelations’.
 The key purpose was to help students with creative and innovative ideas by taking regular follow ups from them, providing proper guidance and helping them attend seminars and workshops relevant to their startup and project ideas.
-</p>
+</span>
 						</div>
 						<div class="col-lg-3 col-md-3 speaker-wrap">
 							<div class="single-speaker">
@@ -976,8 +998,8 @@ The key purpose was to help students with creative and innovative ideas by takin
 								 </div>
 							</div>
 								<h2>Ideas to Prototype</h2>
-								<p id="showinfo8" style="display: none;">At the end of the IC Resolutions campaign, Ideas to Prototype acted as a closing event where the Faculty Mentor and President of the Innovation Cell gave a speech and had an informal discussion with the students about their project journeys and how they are planning to convert their ideas to prototypes in the vacations.
-</p>
+								<span id="showinfo8" style="display: none;">At the end of the IC Resolutions campaign, Ideas to Prototype acted as a closing event where the Faculty Mentor and President of the Innovation Cell gave a speech and had an informal discussion with the students about their project journeys and how they are planning to convert their ideas to prototypes in the vacations.
+</span>
 						</div>
 					</div>
 					</div>
@@ -1054,8 +1076,8 @@ The key purpose was to help students with creative and innovative ideas by takin
 					document.getElementById("formhide").style.display = "none";
 					document.getElementById("midform").style.display = "block";
 					document.getElementById("midform2").style.display = "none";
-					document.getElementById("midbutton").style.display = "none";
-					document.getElementById("midbutton2").style.display = "none";
+					/*document.getElementById("midbutton").style.display = "block";
+					document.getElementById("midbutton2").style.display = "block";*/
 				}
 				function formshow2(){
 					/* document.getElementById("formhide").style.display = "none";
@@ -1064,8 +1086,8 @@ The key purpose was to help students with creative and innovative ideas by takin
 					document.getElementById("formhide").style.display = "none";
 					document.getElementById("midform2").style.display = "block";
 					document.getElementById("midform").style.display = "none";
-					document.getElementById("midbutton").style.display = "none";
-					document.getElementById("midbutton2").style.display = "none";
+					/*document.getElementById("midbutton").style.display = "block";
+					document.getElementById("midbutton2").style.display = "block";*/
 				}
 			</script>
 
@@ -1120,9 +1142,9 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Username = 'iec81400@gmail.com';
 								$mail->Password = 'IEC2018rocks';
 								$mail->SetFrom('noreply@omair.com');
-								$mail->Subject = 'Hello world';
+								$mail->Subject = 'New IEC Registration';
 								$mail->Body = $variable;
-								$mail->AddAddress('omairmandhai.om@gmail.com');
+								$mail->AddAddress('iec81400@gmail.com');
 
 								$mail->Send();
 
@@ -1178,9 +1200,9 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Username = 'iec81400@gmail.com';
 								$mail->Password = 'IEC2018rocks';
 								$mail->SetFrom('noreply@omair.com');
-								$mail->Subject = 'Hello world';
+								$mail->Subject = 'New IEC Registration';
 								$mail->Body = $variable;
-								$mail->AddAddress('omairmandhai.om@gmail.com');
+								$mail->AddAddress('iec81400@gmail.com');
 
 								$mail->Send();
 
@@ -1233,9 +1255,9 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Username = 'iec81400@gmail.com';
 								$mail->Password = 'IEC2018rocks';
 								$mail->SetFrom('noreply@omair.com');
-								$mail->Subject = 'Hello world';
+								$mail->Subject = 'New IEC Registration';
 								$mail->Body = $variable;
-								$mail->AddAddress('omairmandhai.om@gmail.com');
+								$mail->AddAddress('iec81400@gmail.com');
 
 								$mail->Send();
 
@@ -1445,7 +1467,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3  col-md-12">
-							<div class="single-footer-widget">
+							<!--<div class="single-footer-widget">
 								<h6>Top Products</h6>
 								<ul class="footer-nav">
 									<li><a href="#">Managed Website</a></li>
@@ -1453,7 +1475,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 									<li><a href="#">Power Tools</a></li>
 									<li><a href="#">Marketing Service</a></li>
 								</ul>
-							</div>
+							</div>-->
 						</div>
 						<div class="col-lg-6  col-md-12">
 							<div class="single-footer-widget newsletter">
@@ -1504,10 +1526,10 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Username = 'iec81400@gmail.com';
 								$mail->Password = 'IEC2018rocks';
 								$mail->SetFrom('noreply@omair.com');
-								$mail->Subject = 'Hello world';
+								$mail->Subject = 'New IEC Registration';
 								//$mail->Body = "Name: " + $name + "  Phone: " + $phone + "  Email: " + $email + "  Idea: " + $idea;
 								$mail->Body = $info;
-								$mail->AddAddress('omairmandhai.om@gmail.com');
+								$mail->AddAddress('iec81400@gmail.com');
 
 								$mail->Send();
 
@@ -1522,7 +1544,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3  col-md-12">
+						<!--<div class="col-lg-3  col-md-12">
 							<div class="single-footer-widget mail-chimp">
 								<h6 class="mb-20">Instragram Feed</h6>
 								<ul class="instafeed d-flex flex-wrap">
@@ -1536,7 +1558,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 									<li><img src="img/i8.jpg" alt=""></li>
 								</ul>
 							</div>
-						</div>
+						</div>-->
 					</div>
 
 					<div class="row footer-bottom d-flex justify-content-between">
