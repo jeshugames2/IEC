@@ -297,6 +297,7 @@
 	position: absolute;
 	right: 15px;
 	background: white;
+}
 </style>
 		</head>
 		<body>
@@ -1309,49 +1310,58 @@ The key purpose was to help students with creative and innovative ideas by takin
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-8 pb-80 header-text">
 							<h1>About us</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.
-							</p>
+							<span>
+							The Innovation and Entrepreneurship Cell, MPSTME is a not-for-profit committee run by a group of students of SVKM's NMIMS's Mukesh Patel School of Technology Management and Engineering, formed by the people who were behind the Entrepreneurship Cell and the Innovation Cell of MPSTME.
+Our primary aim is to evince the untapped innovative and entrepreneurial spirit of the young students through interactive events, workshops and projects, to name a few. An entrepreneurial hub in Mumbai is what we aim to set up through our work.
+In a nutshell, we help students of our institute curate ideas and enable them to get an entrepreneurial mindset. We provide those interested, with the best suited guidance at all stages they will encounter in their endeavour to set up their own venture.
+
+We take pride in telling you that we help a growing number of startups realise their goals, be it by assisting them in pursuing the perfect mentor from the industry, by helping showcase their work to potential investors or by giving them real world exposure, among other things we do.
+Each event, seminar or workshop that we conduct is strategized to give the students some insight into the different aspects of being a successful innovator or entrepreneur.
+Our flagship event, Inceptio, is the annual culmination of our endeavour to help budding innovators and entrepreneurs establish themselves in the real world. Through all of these activities, we aim to launch well-rounded, prepared leaders into a world that will benefit from their creations.
+							</span>
 						</div>
 					</div>
 					<div class="row">
+					<div class="col-md-12 pb-40 header-text justify-content-center">
+					<h2>Our Mentors</h2>
+					</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/s1.jpg" alt="">
+								    <!--a href="#" target="_blank"-->
+								      <!--div class="content-overlay"></div-->
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/anuja-agarwal-3-.jpg" alt="" style="height:220px">
 								      	<div class="content-details fadeIn-bottom"></div>
-								    </a>
+								    <!--/a-->
 								 </div>
 							</div>
-						  	<h2>Andy Florence</h2>
+						  	<h2>Dr. Anuja Agarwal</h2>
 						  	<p>inappropriate behavior</p>
 						</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/s2.jpg" alt="">
+								    <!--a href="#" target="_blank"-->
+								      <!--div class="content-overlay"></div-->
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/seema-shah.png" alt="" style="height:220px">
 								      	<div class="content-details fadeIn-bottom"></div>
-								    </a>
+								    <!--/a-->
 								 </div>
 							</div>
-						  	<h2>Andy Florence</h2>
+						  	<h2>Dr. Seema Shah</h2>
 						  	<p>inappropriate behavior</p>
 						</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/s3.jpg" alt="">
+								    <!--a href="#" target="_blank"-->
+								      <!--div class="content-overlay"></div-->
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/kavindra-sharma.jpg" alt="" style="height:220px">
 								      	<div class="content-details fadeIn-bottom"></div>
-								    </a>
+								    <!--/a-->
 								 </div>
 							</div>
-						  	<h2>Andy Florence</h2>
+						  	<h2>Prof. Kavindra Sharma</h2>
 						  	<p>inappropriate behavior</p>
 						</div>
 
@@ -1380,7 +1390,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 								<div class="col-lg-7 details">
 									<a href="#">
-										<h4>Sponsor 1</h4>
+										<h4>Frapp</h4>
 									</a>
 									<p>
 										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
@@ -1394,7 +1404,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 								<div class="col-lg-7 details">
 									<a href="#">
-										<h4>Sponsor 2</h4>
+										<h4>Bharat Petroleum</h4>
 									</a>
 									<p>
 										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
@@ -1408,7 +1418,105 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 								<div class="col-lg-7 details">
 									<a href="#">
-										<h4>Sponsor 3</h4>
+										<h4>Facebook</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Dainik Bhaskar</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Time to 3D</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Chatur Ideas</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Blacklion</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>The Souled Store</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>The Power House Gym</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e3.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Helios</h4>
 									</a>
 									<p>
 										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
@@ -1424,7 +1532,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 								<div class="col-lg-7 details">
 									<a href="#">
-										<h4>Sponsor 4</h4>
+										<h4>O2rise</h4>
 									</a>
 									<p>
 										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
@@ -1438,7 +1546,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 								<div class="col-lg-7 details">
 									<a href="#">
-										<h4>Sponsor 5</h4>
+										<h4>Sosyo</h4>
 									</a>
 									<p>
 										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
@@ -1452,7 +1560,105 @@ The key purpose was to help students with creative and innovative ideas by takin
 								</div>
 								<div class="col-lg-7 details">
 									<a href="#">
-										<h4>Sponsor 6</h4>
+										<h4>Selwel Enterprise</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Titan EYE Plus</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Bachelor Housing</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Bakers Delight</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>BioPronut</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Chaayos</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Hitech</h4>
+									</a>
+									<p>
+										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
+									</p>
+									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+								</div>
+							</div>
+							<div class="single-events row no-padding">
+								<div class="col-lg-4 image">
+									<img src="img/e6.jpg" alt="">
+								</div>
+								<div class="col-lg-7 details">
+									<a href="#">
+										<h4>Fortune Life</h4>
 									</a>
 									<p>
 										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
