@@ -1336,7 +1336,6 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								 </div>
 							</div>
 						  	<h2>Dr. Anuja Agarwal</h2>
-						  	<p>inappropriate behavior</p>
 						</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
@@ -1349,7 +1348,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								 </div>
 							</div>
 						  	<h2>Dr. Seema Shah</h2>
-						  	<p>inappropriate behavior</p>
+						  	<p></p>
 						</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
@@ -1362,7 +1361,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								 </div>
 							</div>
 						  	<h2>Prof. Kavindra Sharma</h2>
-						  	<p>inappropriate behavior</p>
+						  	<p></p>
 						</div>
 
 					</div>
@@ -1392,10 +1391,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Frapp</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
+
 								</div>
 							</div>
 							<div class="single-events row no-padding">
@@ -1406,10 +1402,6 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Bharat Petroleum</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
 								</div>
 							</div>
 							<div class="single-events row no-padding">
@@ -1420,11 +1412,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Facebook</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1434,11 +1422,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Dainik Bhaskar</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1448,11 +1432,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Time to 3D</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1462,11 +1442,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Chatur Ideas</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1476,11 +1452,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Blacklion</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1490,11 +1462,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>The Souled Store</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1504,11 +1472,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>The Power House Gym</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1518,11 +1482,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Helios</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-sm-6">
@@ -1534,11 +1494,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>O2rise</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1548,11 +1504,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Sosyo</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1562,11 +1514,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Selwel Enterprise</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1576,11 +1524,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Titan EYE Plus</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1590,11 +1534,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Bachelor Housing</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1604,11 +1544,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Bakers Delight</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1618,11 +1554,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>BioPronut</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1632,11 +1564,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Chaayos</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1646,11 +1574,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Hitech</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 							<div class="single-events row no-padding">
 								<div class="col-lg-4 image">
@@ -1660,11 +1584,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									<a href="#">
 										<h4>Fortune Life</h4>
 									</a>
-									<p>
-										inappropriate behavior Lorem ipsum dolor sit amet, consectetur.
-									</p>
-									<p class="meta"><span class="lnr lnr-heart"></span> <span class="likes">05 likes</span> <span class="lnr lnr-bubble"></span> <span class="likes">06 comments</span></p>
-								</div>
+									</div>
 							</div>
 						</div>
 					</div>
