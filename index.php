@@ -1397,7 +1397,9 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								 </div>
 							</div>
 						  	<h2>Dr. Anuja Agarwal</h2>
-						  	<!--p>inappropriate behavior</p-->
+						  	<p>
+									Dr. Anuja Agarwal is the Associate Dean of Technology Management at NMIMS University. She holds a Ph. D. in Management Studies from Mumbai University and a MCA - DAVV, BSc.(Computer Science) from Delhi University. She has been honored with several awards for her specialization in Innovation, Design Thinking and Innovation Management, New Product Development. It is thus only natural, that she has been the primary force mentoring IEC, as we deal with uncharted territory head-on. Her attention to detail and keen insight inspire us, as does her ability to fix any problem just by setting her mind to it.
+								</p>
 						</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
@@ -1410,7 +1412,9 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								 </div>
 							</div>
 						  	<h2>Dr. Seema Shah</h2>
-						  	<!--p>inappropriate behavior</p-->
+						  	<p>
+									In charge of the BTech Integrated Program at MPSTME, Seema ma'am has done her engineering at VJTI and has teaching and administrative expertise in Electronics And Computers for over a decade. She is also the former head of the Indian Institute of Gems and Jewellery. Her innovative approach and helpful attitude makes her someone we always turn to when we need guidance!
+								</p>
 						</div>
 						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
@@ -1422,8 +1426,8 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								    <!--/a-->
 								 </div>
 							</div>
-						  	<!--h2>Prof. Kavindra Sharma</h2-->
-						  	<p>inappropriate behavior</p>
+						  	<h2>Prof. Kavindra Sharma</h2>
+						  	<p>Having pursued M. Tech from IIT, Bombay, he has been the Vice president - Global head, consulting at L&T Infotech and General Manager at Syntel. He is also an Adj. Faculty SVKM’S NMIMS. With his numerous professional experiences and a pool of knowledge to support us with, he is the practical eye to our imaginative world!</p>
 						</div>
 
 					</div>
