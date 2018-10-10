@@ -1,0 +1,1 @@
+const windowloc = window.location.href;
