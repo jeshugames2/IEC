@@ -98,9 +98,9 @@
 				.buttonsub {
   display: inline-block;
   border-radius: 4px;
-  background-color: black;
+  background-color: #e6e6e6;
   border: none;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   font-size: 16px;
   padding: 20px;
@@ -137,7 +137,7 @@
   right: 0;
 }
 .buttonsub2 {
-  background-color: #f4511e;
+  background-color: #C732FF;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -154,7 +154,7 @@
 
 .buttonsub2:hover {opacity: 1;}
 .buttonsub3 {
-  background-color: #f4511e;
+  background-color: #C732FF;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -1852,10 +1852,10 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</p>
 						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
+							<a href="https://www.facebook.com/IECMpstme/" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://in.linkedin.com/in/iec-mpstme-1ba8a0148" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/iec.mpstme/" target="_blank"><i class="fa fa-instagram"></i></a>
+							<!-- <a href="#"><i class="fa fa-behance"></i></a> -->
 						</div>
 					</div>
 				</div>
