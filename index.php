@@ -37,6 +37,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
 				<!--link rel="stylesheet" href="https://cdnjs.com/libraries/ekko-lightbox"-->
         <script src="form.js"></script>
+        <script src="js/const.js"></script>
 		<!-- Site Title -->
 		<title>IEC</title>
 
@@ -320,6 +321,9 @@
 	max-height: 300px;
 
 }
+#redstar{
+	color: red;
+}
 </style>
 		</head>
 		<body>
@@ -448,198 +452,6 @@
 			<!-- End Header Area -->
 
 			<!-- Start banner Area -->
-			<!--Homepage Carousel (Shashwat)-->
-			<!--div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval= "3000">
-				<!ol class="carousel-indicators">
-    			<li data-target="home-carousel" data-slide-to="0" class="active"></li>
-    			<li data-target="home-carousel" data-slide-to="1"></li>
-    			<li data-target="home-carousel" data-slide-to="2"></li>
-			  </ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-			<section class="banner-area relative" id="home">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-
-						<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
-							<div class="banner-content col-lg-6 col-md-12">
-								<h1>
-									Our Next Event Starts in
-								</h1>
-				        		<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
-				                    <div class="clockinner">
-				                        <span class="days"></span>
-				                        <div class="smalltext">Days</div>
-				                    </div>
-				                    <div class="clockinner">
-				                        <span class="hours"></span>
-				                        <div class="smalltext">Hours</div>
-				                    </div>
-				                    <div class="clockinner">
-				                        <span class="minutes"></span>
-				                        <div class="smalltext">Minutes</div>
-				                    </div>
-				                    <div class="clockinner">
-				                        <span class="seconds"></span>
-				                        <div class="smalltext">Seconds</div>
-				                    </div>
-
-				                </div>
-							</div>
-						</div>
-				</div>
-			</section>
-			</div>
-			<div class="carousel-item">
-	<section class="banner-area relative" id="home2">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-
-				<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
-					<div class="banner-content col-lg-6 col-md-12">
-						<h1>
-							Our Next Event Starts in
-						</h1>
-								<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
-												<div class="clockinner">
-														<span class="days"></span>
-														<div class="smalltext">Days</div>
-												</div>
-												<div class="clockinner">
-														<span class="hours"></span>
-														<div class="smalltext">Hours</div>
-												</div>
-												<div class="clockinner">
-														<span class="minutes"></span>
-														<div class="smalltext">Minutes</div>
-												</div>
-												<div class="clockinner">
-														<span class="seconds"></span>
-														<div class="smalltext">Seconds</div>
-												</div>
-
-										</div>
-					</div>
-				</div>
-		</div>
-
-	</section>
-	</div>
-	<div class="carousel-item">
-<section class="banner-area relative" id="home3">
-<div class="overlay overlay-bg"></div>
-<div class="container">
-
-		<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
-			<div class="banner-content col-lg-6 col-md-12">
-				<h1>
-					Our Next Event Starts in
-				</h1>
-						<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
-										<div class="clockinner">
-												<span class="days"></span>
-												<div class="smalltext">Days</div>
-										</div>
-										<div class="clockinner">
-												<span class="hours"></span>
-												<div class="smalltext">Hours</div>
-										</div>
-										<div class="clockinner">
-												<span class="minutes"></span>
-												<div class="smalltext">Minutes</div>
-										</div>
-										<div class="clockinner">
-												<span class="seconds"></span>
-												<div class="smalltext">Seconds</div>
-										</div>
-
-								</div>
-			</div>
-		</div>
-</div>
-
-</section>
-</div>
-<div class="carousel-item">
-<section class="banner-area relative" id="home4">
-<div class="overlay overlay-bg"></div>
-<div class="container">
-
-	<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
-		<div class="banner-content col-lg-6 col-md-12">
-			<h1>
-				Our Next Event Starts in
-			</h1>
-					<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
-									<div class="clockinner">
-											<span class="days"></span>
-											<div class="smalltext">Days</div>
-									</div>
-									<div class="clockinner">
-											<span class="hours"></span>
-											<div class="smalltext">Hours</div>
-									</div>
-									<div class="clockinner">
-											<span class="minutes"></span>
-											<div class="smalltext">Minutes</div>
-									</div>
-									<div class="clockinner">
-											<span class="seconds"></span>
-											<div class="smalltext">Seconds</div>
-									</div>
-
-							</div>
-		</div>
-	</div>
-</div>
-
-</section>
-</div>
-<div class="carousel-item">
-<section class="banner-area relative" id="home5">
-<div class="overlay overlay-bg"></div>
-<div class="container">
-
-	<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
-		<div class="banner-content col-lg-6 col-md-12">
-			<h1>
-				Our Next Event Starts in
-			</h1>
-					<div class="row clock_sec d-flex flex-row justify-content-between" id="clockdiv">
-									<div class="clockinner">
-											<span class="days"></span>
-											<div class="smalltext">Days</div>
-									</div>
-									<div class="clockinner">
-											<span class="hours"></span>
-											<div class="smalltext">Hours</div>
-									</div>
-									<div class="clockinner">
-											<span class="minutes"></span>
-											<div class="smalltext">Minutes</div>
-									</div>
-									<div class="clockinner">
-											<span class="seconds"></span>
-											<div class="smalltext">Seconds</div>
-									</div>
-
-							</div>
-		</div>
-	</div>
-</div>
-
-</section>
-</div>
-		</div>
-		<a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div-->
 
 	<section class="banner-area relative" id="home">
 		<div class="overlay overlay-bg"></div>
@@ -1177,33 +989,44 @@ The key purpose was to help students with creative and innovative ideas by takin
 						<div class="col-md-8 pb-80 header-text">
 							<h1>Contact us</h1>
 
+							<span id="warning"></span>
+
 						<div id="formhide">
-							<input type="name" id="email_name" name="name" placeholder="Omair Mandhai"><br>
-							<input type="email" id="email_email" name="email" placeholder="example@gmail.com" style="margin-top: 5px;"><br>
-							<input type="text" id="email_msg" name="text" placeholder="message" style="margin-top: 5px;"><br/>
+							<label>Name<span id="redstar">*</span></label>
+							<input type="name" id="email_name" name="name" placeholder="Omair Mandhai" style="border-radius: 10px; border: 1px solid grey;"><br>
+							<label>Email<span id="redstar">*</span></label>
+							<input type="email" id="email_email" name="email" placeholder="example@gmail.com" style="margin-top: 5px; border-radius: 10px; border: 1px solid grey;"><br>
+							<label>Message<span id="redstar">*</span></label>
+							<input type="text" id="email_msg" name="text" placeholder="message" style="margin-top: 5px; border-radius: 10px; border: 1px solid grey;"><br/>
 							<button id="emailbtn" name="emailbtn" style="margin-top: 6px; vertical-align:middle;" class="buttonsub" onclick="ajaxvar();"><span>SUBMIT</span></button><br/>
+
+							<?php
+							$actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+							?>
 
 							<script type="text/javascript">
 								function ajaxvar(){
 								var a = document.getElementById("email_name").value;
 								var b = document.getElementById("email_email").value;
 								var c = document.getElementById("email_msg").value;
-  								window.location.href = window.location.href+'?a='+a+'%20email='+b+'%20msg='+c;
+
+								if(!a){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!b){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!c){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else{
+  								window.location.href = window.location.href+'?name='+a+'%20email='+b+'%20msg='+c;}
   							}
 							</script>
 
 							<?php
 
-								/*use PHPMailer\PHPMailer\PHPMailer;
-								use PHPMailer\PHPMailer\Exception;
-
-								require './PHPMailer/src/Exception.php';
-								require './PHPMailer/src/PHPMailer.php';
-								require './PHPMailer/src/SMTP.php';*/
-
-								//echo "<html><script>document.getElementById('email_name').value;</script></html>";
-
-								$variable = $_GET['a'];
+								/*$variable = $_GET['name'];
 
 								//echo $variable;
 
@@ -1217,21 +1040,27 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Username = 'iec81400@gmail.com';
 								$mail->Password = 'IEC2018rocks';
 								$mail->SetFrom('noreply@omair.com');
-								$mail->Subject = 'New IEC Registration';
+								$mail->Subject = 'IEC Contact Us Enquiry';
 								$mail->Body = $variable;
 								$mail->AddAddress('iec81400@gmail.com');
 
 								$mail->Send();
 
+								header('Location: facebook.com');
+								echo "<script> location.href=winloc; </script>";
+        						exit;*/
 						?>
-
 
 						</div>
 
 							<div id="midform" class="midform" style="display: none;">
+								<label>Name<span id="redstar">*</span></label>
 									<input type="name" name="midformname" id="midformname" placeholder="Omair Mandhai"><br>
+									<label>Phone<span id="redstar">*</span></label>
 									<input type="tel" name="midformphone" id="midformphone" placeholder="9876543210" style="margin-top: 5px;"><br>
+									<label>Email<span id="redstar">*</span></label>
 									<input type="email" name="midformemail" id="midformemail" placeholder="me@example.com" style="margin-top: 5px;"><br>
+									<label>Idea<span id="redstar">*</span></label>
 									<input type="text" name="midformidea" id="midformidea" placeholder="Idea..." style="margin-top: 4px;"><br/>
 									<button id="midformbutton" name="midformbutton" class="buttonsub" onclick="bottomform2();">Submit</button>
 								</div>
@@ -1243,8 +1072,22 @@ The key purpose was to help students with creative and innovative ideas by takin
 									var midformphone = document.getElementById("midformphone").value;
 									var midformemail = document.getElementById("midformemail").value;
 									var midformidea = document.getElementById("midformidea").value;
-									window.location.href = window.location.href+'?name='+midformname+'%20phone='+midformphone+'%20idea='+midformidea+'%20email='+midformemail;
-									document.getElementById("midform").style.display = "none";
+
+									if(!midformname){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!midformphone){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!midformemail){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!midformidea){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+
+									else{window.location.href = window.location.href+'?name='+midformname+'%20phone='+midformphone+'%20idea='+midformidea+'%20email='+midformemail;}
+									//document.getElementById("midform").style.display = "none";
 									document.getElementById("midbutton").style.display = "block";
 									document.getElementById("midbutton2").style.display = "block";
 								}
@@ -1261,7 +1104,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 
 								//echo "<html><script>document.getElementById('email_name').value;</script></html>";
 
-								$variable = $_GET['name'];
+								/*$variable = $_GET['name'];
 
 								//echo $variable;
 
@@ -1279,14 +1122,18 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Body = $variable;
 								$mail->AddAddress('iec81400@gmail.com');
 
-								$mail->Send();
+								$mail->Send();*/
 
 						?>
 
 								<div id="midform2" class="midform2" style="display: none;">
+									<label>Name<SPAN id="redstar">*</SPAN></label>
 									<input type="name" name="midformname2" id="midformname2" placeholder="Omair Mandhai"><br>
+									<label>Phone<span id="redstar">*</span></label>
 									<input type="tel" name="midformphon2" id="midformphone2" placeholder="9876543210" style="margin-top: 5px;"><br>
+									<label>Email<span id="redstar">*</span></label>
 									<input type="email" name="midformemail2" id="midformemail2" placeholder="me@example.com" style="margin-top: 5px;"><br>
+									<label>Skill<span id="redstar">*</span></label>
 									<input type="text" name="midformidea2" id="midformidea2" placeholder="Skill..." style="margin-top: 4px;"><br/>
 									<button id="midformbutton2" name="midformbutton2" class="buttonsub" onclick="bottomform22();">Submit</button>
 								</div>
@@ -1298,8 +1145,22 @@ The key purpose was to help students with creative and innovative ideas by takin
 									var midformphone2 = document.getElementById("midformphone2").value;
 									var midformemail2 = document.getElementById("midformemail2").value;
 									var midformidea2 = document.getElementById("midformidea2").value;
-									window.location.href = window.location.href+'?name='+midformname2+'%20phone='+midformphone2+'%20skill='+midformidea2+'%20email='+midformemail2;
-									document.getElementById("midform").style.display = "none";
+
+									if(!midformname2){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!midformphone2){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!midformemail2){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+								else if(!midformidea2){
+									document.getElementById("warning").innerHTML = "Please input all the fields!";
+								}
+
+									else{window.location.href = window.location.href+'?name='+midformname2+'%20phone='+midformphone2+'%20skill='+midformidea2+'%20email='+midformemail2;}
+									//document.getElementById("midform").style.display = "none";
 									document.getElementById("midbutton").style.display = "block";
 									document.getElementById("midbutton2").style.display = "block";
 								}
@@ -1316,7 +1177,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 
 								//echo "<html><script>document.getElementById('email_name').value;</script></html>";
 
-								$variable = $_GET['name'];
+								/*$variable = $_GET['name'];
 
 								//echo $variable;
 
@@ -1337,7 +1198,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Send();
 
 								//echo "<html><script>window.location.href = winloc;</script></html>";
-
+						*/
 						?>
 
 							<button class="buttonsub2" id="midbutton" onclick="formshow();">I have an idea</button>
@@ -1766,8 +1627,10 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 								<!--<h6>I have an</h6>-->
 								<!--<p>You can trust us. we only send promo offers, not a single spam.</p>-->
 
+								<span id="redletters" style="color: red;"></span>
+
 								<div id="footerform" class="footerform" style="display: none;">
-									<input type="name" name="formname" id="formname" placeholder="Omair Mandhai" style="margin-top: 2px;">
+									<input type="name" name="formname" id="formname" placeholder="Name" style="margin-top: 2px;">
 									<input type="tel" name="formphone" id="formphone" placeholder="9876543210" style="margin-top: 2px;">
 									<input type="email" name="formemail" id="formemail" placeholder="me@example.com" style="margin-top: 2px;">
 									<input type="text" name="formidea" id="formidea" placeholder="Idea..." style="margin-top: 2px;">
@@ -1781,22 +1644,27 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									var formphone = document.getElementById("formphone").value;
 									var formemail = document.getElementById("formemail").value;
 									var formidea = document.getElementById("formidea").value;
-									window.location.href = window.location.href+'?name='+formname+'%20phone='+formphone+'%20idea='+formidea+'%20email='+formemail;
-									document.getElementById("footerform").style.display = "none";
+
+									if(!formname){
+									document.getElementById("redletters").innerHTML = "Please input all the fields!";
+								}
+								else if(!formphonr){
+									document.getElementById("redletters").innerHTML = "Please input all the fields!";
+								}
+								else if(!formemail){
+									document.getElementById("redletters").innerHTML = "Please input all the fields!";
+								}
+								else if(!formidea){
+									document.getElementById("redletters").innerHTML = "Please input all the fields!";
+								}
+
+									else{window.location.href = window.location.href+'?name='+formname+'%20phone='+formphone+'%20idea='+formidea+'%20email='+formemail;}
+									//document.getElementById("footerform").style.display = "none";
 									document.getElementById("buttonsub4").style.display = "block";
 								}
 								</script>
 
 								<?php
-
-								/*use PHPMailer\PHPMailer\PHPMailer;
-								use PHPMailer\PHPMailer\Exception;
-
-								require './PHPMailer/src/Exception.php';
-								require './PHPMailer/src/PHPMailer.php';
-								require './PHPMailer/src/SMTP.php';*/
-
-								//echo "<html><script>document.getElementById('email_name').value;</script></html>";
 
 								$info = $_GET['name'];
 
@@ -1817,7 +1685,17 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 
 								$mail->Send();
 
+								if (!$info) {}
+								else {
+								echo "<script> location.href='index.php'; </script>";
+        						exit; /* Redirect browser */
+								}
 						?>
+
+						<script type="text/javascript">
+							var winloc2 = window.location.href;
+							if(winloc2!=windowloc){window.location.href = windowloc;}
+						</script>
 
 								<div id="mc_embed_signup">
 
