@@ -324,6 +324,82 @@
 #redstar{
 	color: red;
 }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 </style>
 		</head>
 		<body>
@@ -988,9 +1064,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-8 pb-80 header-text">
 							<h1>Contact us</h1>
-
-							<span id="warning"></span>
-
+							<span id="warnings"></span>
 						<div id="formhide">
 							<label>Name<span id="redstar">*</span></label>
 							<input type="name" id="email_name" name="name" placeholder="Omair Mandhai" style="border-radius: 10px; border: 1px solid grey;"><br>
@@ -1011,13 +1085,13 @@ The key purpose was to help students with creative and innovative ideas by takin
 								var c = document.getElementById("email_msg").value;
 
 								if(!a){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warnings").innerHTML = "Please input all the fields!";
 								}
 								else if(!b){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warnings").innerHTML = "Please input all the fields!";
 								}
 								else if(!c){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warnings").innerHTML = "Please input all the fields!";
 								}
 								else{
   								window.location.href = window.location.href+'?name='+a+'%20email='+b+'%20msg='+c;}
@@ -1052,8 +1126,13 @@ The key purpose was to help students with creative and innovative ideas by takin
 						?>
 
 						</div>
+						<div id="myModal" class="modal">
 
-							<div id="midform" class="midform" style="display: none;">
+						  <!-- Modal content -->
+						  <div class="modal-content">
+						    <span class="close">&times;</span>
+						    <span id="warning"></span>
+							<div id="midform" class="midform">
 								<label>Name<span id="redstar">*</span></label>
 									<input type="name" name="midformname" id="midformname" placeholder="Omair Mandhai"><br>
 									<label>Phone<span id="redstar">*</span></label>
@@ -1063,7 +1142,35 @@ The key purpose was to help students with creative and innovative ideas by takin
 									<label>Idea<span id="redstar">*</span></label>
 									<input type="text" name="midformidea" id="midformidea" placeholder="Idea..." style="margin-top: 4px;"><br/>
 									<button id="midformbutton" name="midformbutton" class="buttonsub" onclick="bottomform2();">Submit</button>
-								</div>
+								</div></div></div>
+
+								<script>
+									// Get the modal
+									var modal = document.getElementById('myModal');
+
+									// Get the button that opens the modal
+									var btn = document.getElementById("midbutton");
+
+									// Get the <span> element that closes the modal
+									var span = document.getElementsByClassName("close")[0];
+
+									// When the user clicks the button, open the modal 
+									function omair() {
+									    modal.style.display = "block";
+									}
+
+									// When the user clicks on <span> (x), close the modal
+									span.onclick = function() {
+									    modal.style.display = "none";
+									}
+
+									// When the user clicks anywhere outside of the modal, close it
+									window.onclick = function(event) {
+									    if (event.target == modal) {
+									        modal.style.display = "none";
+									    }
+									}
+								</script>
 
 							<script type="text/javascript">
 									function bottomform2(){
@@ -1125,18 +1232,51 @@ The key purpose was to help students with creative and innovative ideas by takin
 								$mail->Send();*/
 
 						?>
+							<div id="myModal2" class="modal2">
 
-								<div id="midform2" class="midform2" style="display: none;">
+						  <!-- Modal content -->
+						  <div class="modal-content2">
+						    <span class="close2">&times;</span>
+						    <span id="warningss"></span>
+								<div id="midform2" class="midform2">
 									<label>Name<SPAN id="redstar">*</SPAN></label>
 									<input type="name" name="midformname2" id="midformname2" placeholder="Omair Mandhai"><br>
 									<label>Phone<span id="redstar">*</span></label>
-									<input type="tel" name="midformphon2" id="midformphone2" placeholder="9876543210" style="margin-top: 5px;"><br>
+									<input type="tel" name="midformphone2" id="midformphone2" placeholder="9876543210" style="margin-top: 5px;"><br>
 									<label>Email<span id="redstar">*</span></label>
 									<input type="email" name="midformemail2" id="midformemail2" placeholder="me@example.com" style="margin-top: 5px;"><br>
 									<label>Skill<span id="redstar">*</span></label>
 									<input type="text" name="midformidea2" id="midformidea2" placeholder="Skill..." style="margin-top: 4px;"><br/>
 									<button id="midformbutton2" name="midformbutton2" class="buttonsub" onclick="bottomform22();">Submit</button>
-								</div>
+								</div></div></div>
+
+								<script>
+									// Get the modal
+									var modal = document.getElementById('myModal2');
+
+									// Get the button that opens the modal
+									var btn = document.getElementById("midbutton2");
+
+									// Get the <span> element that closes the modal
+									var span = document.getElementsByClassName("close2")[0];
+
+									// When the user clicks the button, open the modal 
+									function omair2() {
+									    modal.style.display = "block";
+									}
+
+									// When the user clicks on <span> (x), close the modal
+									span.onclick = function() {
+									    modal.style.display = "none";
+									}
+
+									// When the user clicks anywhere outside of the modal, close it
+									window.onclick = function(event) {
+									    if (event.target == modal) {
+									        modal.style.display = "none";
+									    }
+									}
+								</script>
 
 							<script type="text/javascript">
 									function bottomform22(){
@@ -1147,16 +1287,16 @@ The key purpose was to help students with creative and innovative ideas by takin
 									var midformidea2 = document.getElementById("midformidea2").value;
 
 									if(!midformname2){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warningss").innerHTML = "Please input all the fields!";
 								}
 								else if(!midformphone2){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warningss").innerHTML = "Please input all the fields!";
 								}
 								else if(!midformemail2){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warningss").innerHTML = "Please input all the fields!";
 								}
 								else if(!midformidea2){
-									document.getElementById("warning").innerHTML = "Please input all the fields!";
+									document.getElementById("warningss").innerHTML = "Please input all the fields!";
 								}
 
 									else{window.location.href = window.location.href+'?name='+midformname2+'%20phone='+midformphone2+'%20skill='+midformidea2+'%20email='+midformemail2;}
@@ -1201,8 +1341,8 @@ The key purpose was to help students with creative and innovative ideas by takin
 						*/
 						?>
 
-							<button class="buttonsub2" id="midbutton" onclick="formshow();">I have an idea</button>
-							<button class="buttonsub3" id="midbutton2" onclick="formshow2();">I have a skill</button>
+							<button class="buttonsub2" id="midbutton" onclick="omair();">I have an idea</button>
+							<button class="buttonsub3" id="midbutton2" onclick="omair2();">I have a skill</button>
 
 						</div>
 						</div>
@@ -1648,7 +1788,7 @@ Our flagship event, Inceptio, is the annual culmination of our endeavour to help
 									if(!formname){
 									document.getElementById("redletters").innerHTML = "Please input all the fields!";
 								}
-								else if(!formphonr){
+								else if(!formphone){
 									document.getElementById("redletters").innerHTML = "Please input all the fields!";
 								}
 								else if(!formemail){
