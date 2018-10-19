@@ -406,7 +406,12 @@
     text-decoration: none;
     cursor: pointer;
 }
+.modal{
+	background-color: rgba(0,0,0,0.8)
+}
+
 </style>
+
 		</head>
 		<body>
 
@@ -609,7 +614,7 @@
 
 			<!-- Start Inceptio Area-->
 
-			<script type="text/javascript">
+			<!--script type="text/javascript">
 				function showInceptio(){
 					var x = document.getElementById("InceptioInfo");
 					if(x.style.display === "none"){
@@ -680,7 +685,7 @@
 					}
 					else { z.style.display = "none";
 				}}
-			</script>
+			</script-->
 
 			<section class="facilities-area section-gap" id="functionalities" style="display: none;">
 				<div class="container">
@@ -694,81 +699,266 @@
 					</div>
 					<div class="row" style="padding: 0px;">
 						<div class="sigle-facilities col-md-12 pb-100">
-							<a target="_blank" onclick="showInceptio();"><img class="inceptio-image img-fluid d-block mx-auto pb-40" src="img/IMG_0372.jpg" alt="Crowd Funding"></a>
-							<h3>Virtual Crowd Funding</h3><br>
-							<span id="InceptioInfo" style="display: none;">
+							<a data-toggle="modal" href="#vcfmodal"><img class="inceptio-image img-fluid d-block mx-auto pb-40" src="img/IMG_9329-2.jpg" alt="Crowd Funding">
+							<h3>Virtual Crowd Funding</h3></a><br>
+							<!--span id="InceptioInfo" style="display: none;">
 								This was the flagship event of Inceptio 2018 wherein teams were to present a brief pitch of their ideas in front of expert panelists and the audience, who would be equipped with a certain amount of funds online through our exclusive site. The panelists for the evening, who had also judged the Live Projects Competition prior to this, were Mr. Murtuza Haryanawalla, Mr. Nikhil Karkera, Dr. Kushal Sanghvi, Ms. Ruchika Gupta from Uber, Mr. Atul Verma the Marketing Head for Future Group, Ms. Palomi from our Crowdfunding partner Ketto, and our esteemed faculties Dr. Anuja Agarwal and Dr. Seema Shah.
 The team which acquired highest and the second highest virtual funds won a cash prize of INR 11,000 and INR 4,000 respectively. The 11 shortlisted teams were also awarded Certificates of Participation.
-							</span>
+</span-->
+<div class="modal fade" id="vcfmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Virtual Crowd Funding</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/IMG_9329-2.jpg" alt="" style="height:200px;width:100%">
+				<p>This was the flagship event of Inceptio 2018 wherein teams were to present a brief pitch of their ideas in front of expert panelists and the audience, who would be equipped with a certain amount of funds online through our exclusive site. The panelists for the evening, who had also judged the Live Projects Competition prior to this, were Mr. Murtuza Haryanawalla, Mr. Nikhil Karkera, Dr. Kushal Sanghvi, Ms. Ruchika Gupta from Uber, Mr. Atul Verma the Marketing Head for Future Group, Ms. Palomi from our Crowdfunding partner Ketto, and our esteemed faculties Dr. Anuja Agarwal and Dr. Seema Shah.
+The team which acquired highest and the second highest virtual funds won a cash prize of INR 11,000 and INR 4,000 respectively. The 11 shortlisted teams were also awarded Certificates of Participation.</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio2();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_0053.jpg" alt=""></a>
-							<h4>InceptioTalks</h4>
-							<span id="InceptioInfo2" style="display: none;">
+							<a data-toggle="modal" href="#itmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_0053.jpg" alt="">
+							<h4>InceptioTalks</h4></a>
+							<!--span id="InceptioInfo2" style="display: none;">
 								The guest speaker for this session was Mr. Praveen Wadalkar, Co-founder and CEO of Techizer Tech Solutions Pvt. Ltd. At InceptioTalks, Mr. Praveen Wadalkar spoke in depth about his life and how hardships from his childhood, taking risks as a young adult, and creating a niche for himself in a competitive business field were all challenges which made him struggle but also paid the dividend of success.
-							</span>
+							</span-->
+							<div class="modal fade" id="itmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">InceptioTalks</h5>
+												<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+										</div>
+										<div class="modal-body">
+											<img src="img/IMG_0053.jpg" alt="" style="height:200px;width:100%">
+											<p>The guest speaker for this session was Mr. Praveen Wadalkar, Co-founder and CEO of Techizer Tech Solutions Pvt. Ltd. At InceptioTalks, Mr. Praveen Wadalkar spoke in depth about his life and how hardships from his childhood, taking risks as a young adult, and creating a niche for himself in a competitive business field were all challenges which made him struggle but also paid the dividend of success.</p>
+										</div>
+										<!--div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div-->
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio3();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_3112.jpg" alt=""></a>
-							<h4>Startup Showcase</h4>
-							<span id="InceptioInfo3" style="display: none;">
+							<a data-toggle="modal" href="#ssmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_3112.jpg" alt="">
+							<h4>Startup Showcase</h4></a>
+							<!--span id="InceptioInfo3" style="display: none;">
 								This event aimed to introduce emerging start-ups in the community and help them increase their visibility by setting up stalls for college students to visit and purchase from. Due to this event, the participating students got to interact and share their ideas with young entrepreneurs all at one place.
-							</span>
+							</span-->
+							<div class="modal fade" id="ssmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Startup Showcase</h5>
+												<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+										</div>
+										<div class="modal-body">
+											<img src="img/IMG_3112.jpg" alt="" style="height:200px;width:100%">
+											<p>This event aimed to introduce emerging start-ups in the community and help them increase their visibility by setting up stalls for college students to visit and purchase from. Due to this event, the participating students got to interact and share their ideas with young entrepreneurs all at one place.</p>
+										</div>
+										<!--div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div-->
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio4();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/_DSC0033.jpg" alt=""></a>
-							<h4>Ideation</h4>
-							<span id="InceptioInfo4" style="display: none;">
+							<a data-toggle="modal" href="#imodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/_DSC0033.jpg" alt="">
+							<h4>Ideation</h4></a>
+							<!--span id="InceptioInfo4" style="display: none;">
 								The speaker for this workshop was Mr. Nikhil Karkera, Consultant at Oracle Financial Services and Former Intern at Housing.com who talked about idea generation and discussed the communication, planning and modeling phases for the same.
 The participants were guided through the process of idea generation and were eager to see how their ideas would work. Mr Nikhil Karkera was interactive, and kept the audience engaged throughout the session, thus making this popular workshop a grand success.
-							</span>
+</span-->
+							<div class="modal fade" id="imodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Ideation</h5>
+												<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+										</div>
+										<div class="modal-body">
+											<img src="img/_DSC0033.jpg" alt="" style="height:200px;width:100%">
+											<p>The speaker for this workshop was Mr. Nikhil Karkera, Consultant at Oracle Financial Services and Former Intern at Housing.com who talked about idea generation and discussed the communication, planning and modeling phases for the same.
+			The participants were guided through the process of idea generation and were eager to see how their ideas would work. Mr Nikhil Karkera was interactive, and kept the audience engaged throughout the session, thus making this popular workshop a grand success.</p>
+										</div>
+										<!--div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div-->
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio5();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_7216-2.jpg" alt=""></a>
-							<h4>Idea Validation</h4>
-							<span id="InceptioInfo5" style="display: none;">
+							<a data-toggle="modal" href="#ivmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_7216-2.jpg" alt="">
+							<h4>Idea Validation</h4></a>
+							<!--span id="InceptioInfo5" style="display: none;">
 								The speaker for this workshop was Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’, Mentor at IIM-A and an experienced academician and speaker who has has mentored over 100 companies.
 First a brief Q&A session was held about the life of an entrepreneur, after which Dr. Kaustubh Dhargalkar invited the participants to pitch their ideas for a startup.
-							</span>
+</span-->
+<div class="modal fade" id="ivmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Idea Validation</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/IMG_7216-2.jpg" alt="" style="height:200px;width:100%">
+				<p>	The speaker for this workshop was Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’, Mentor at IIM-A and an experienced academician and speaker who has has mentored over 100 companies.
+First a brief Q&A session was held about the life of an entrepreneur, after which Dr. Kaustubh Dhargalkar invited the participants to pitch their ideas for a startup.</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio6();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_9392-2.jpg" alt=""></a>
-							<h4>B-plan Writing</h4>
-							<span id="InceptioInfo6" style="display: none;">
+							<a data-toggle="modal" href="#bmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_9392-2.jpg" alt="">
+							<h4>B-plan Writing</h4></a>
+							<!--span id="InceptioInfo6" style="display: none;">
 								The purpose of this workshop was well achieved by Mr. Haryanawalla as he not only talked about the significance of a business plan but also guided the participants through the process of developing a business model for their startups. He also explained in depth the structure, strategy and the right policies to adopt to keep oneself on track while achieving business goals.
-							</span>
+							</span-->
+							<div class="modal fade" id="bmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">B-plan Writing</h5>
+												<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+										</div>
+										<div class="modal-body">
+											<img src="img/IMG_9392-2.jpg" alt="" style="height:200px;width:100%">
+											<p>	The purpose of this workshop was well achieved by Mr. Haryanawalla as he not only talked about the significance of a business plan but also guided the participants through the process of developing a business model for their startups. He also explained in depth the structure, strategy and the right policies to adopt to keep oneself on track while achieving business goals.</p>
+										</div>
+										<!--div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div-->
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio7();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_3033.jpg" alt=""></a>
-							<h4>Digital Marketing</h4>
-							<span id="InceptioInfo7" style="display: none;">
+							<a data-toggle="modal" href="#dmmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_3033.jpg" alt="">
+							<h4>Digital Marketing</h4></a>
+							<!--span id="InceptioInfo7" style="display: none;">
 								The speaker for this workshop was Dr. Kushal Sanghvi, Business Head at Reliance Entertainment and Digital and one of the top 50 CMOs of India. The Digital Marketing Workshop was a great session for both the audience and the speaker. In the session, Dr. Sanghvi used various means to convey knowledge to the students on how to create brand value, and a unique niche for their product so as to optimize marketing strategies
-							</span>
+							</span-->
+							<div class="modal fade" id="dmmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Digital Marketing</h5>
+												<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+										</div>
+										<div class="modal-body">
+											<img src="img/IMG_3033.jpg" alt="" style="height:200px;width:100%">
+											<p>The speaker for this workshop was Dr. Kushal Sanghvi, Business Head at Reliance Entertainment and Digital and one of the top 50 CMOs of India. The Digital Marketing Workshop was a great session for both the audience and the speaker. In the session, Dr. Sanghvi used various means to convey knowledge to the students on how to create brand value, and a unique niche for their product so as to optimize marketing strategies.</p>
+										</div>
+										<!--div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div-->
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio8();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/_DSC0065.jpg" alt=""></a>
-							<h4>ThinkTank</h4>
-							<span id="InceptioInfo8" style="display: none;">
+							<a data-toggle="modal" href="#ttmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/_DSC0065.jpg" alt="">
+							<h4>ThinkTank</h4></a>
+							<!--span id="InceptioInfo8" style="display: none;">
 								A competition where Companies namely Thomas Cook, Catapooolt, Eden Infosol, BioPronut, Sosyo and Bachelor Housing provided problem statements from their domains and the participating students had to come up with viable solutions which could be implemented by these companies, in order to win the cash prize of INR 5000.
 ThinkTank provided students a unique opportunity to learn and analyze the problems faced by companies and devise practical solutions for the same.
-							</span>
+</span-->
+<div class="modal fade" id="ttmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">ThinkTank</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/_DSC0065.jpg" alt="" style="height:200px;width:100%">
+				<p>A competition where Companies namely Thomas Cook, Catapooolt, Eden Infosol, BioPronut, Sosyo and Bachelor Housing provided problem statements from their domains and the participating students had to come up with viable solutions which could be implemented by these companies, in order to win the cash prize of INR 5000.
+ThinkTank provided students a unique opportunity to learn and analyze the problems faced by companies and devise practical solutions for the same.</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio9();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_0197.jpg" alt=""></a>
-							<h4>BizQuiz</h4>
-							<span id="InceptioInfo9" style="display: none;">
+							<a data-toggle="modal" href="#bqmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_0197.jpg" alt="">
+							<h4>BizQuiz</h4></a>
+							<!--span id="InceptioInfo9" style="display: none;">
 								This challenging quiz was conducted in 2 stages and it tested the all-round awareness, knowledge, business acumen and intelligence of the participants. The team with the highest score was awarded a cash prize of INR 5000. All in all- BizQuiz was a fun-filled, challenging quiz for the best minds from across the city.
-							</span>
+							</span-->
+							<div class="modal fade" id="bqmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">BizQuiz</h5>
+												<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+										</div>
+										<div class="modal-body">
+											<img src="img/IMG_0197.jpg" alt="" style="height:200px;width:100%">
+											<p>This challenging quiz was conducted in 2 stages and it tested the all-round awareness, knowledge, business acumen and intelligence of the participants. The team with the highest score was awarded a cash prize of INR 5000. All in all- BizQuiz was a fun-filled, challenging quiz for the best minds from across the city.</p>
+										</div>
+										<!--div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										</div-->
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="sigle-facilities col-lg-4 col-md-6">
-							<a target="_blank" onclick="showInceptio10();"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_9326-2.jpg" alt=""></a>
-							<h4>Live Projects Competition</h4>
-							<span id="InceptioInfo10" style="display: none;">
+							<a data-toggle="modal" href="#lpcmodal"><img class="inceptio-image img-fluid d-block mx-auto" src="img/IMG_9326-2.jpg" alt="">
+							<h4>Live Projects Competition</h4></a>
+							<!--span id="InceptioInfo10" style="display: none;">
 								The purpose of this competition was to give the students of MPSTME a platform to showcase their innovative ideas and projects developed by them as well as encouraging discussions, interactions and exchange of newer ideas.
 Projects showcased included hydroponically grown plants, drone, collision detectors, data mapped vehicle to trace a particular path, electrically controlled skateboard, helmets with wipers for rains, a comprehensive event management system, etc. The competition consisted of the judges and the audience voting for their favorite project and the team with the maximum votes was awarded a cash prize of INR 5000.
-							</span>
+</span-->
+<div class="modal fade" id="lpcmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Live Projects Competition</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/IMG_9326-2.jpg" alt="" style="height:200px;width:100%">
+				<p>The purpose of this competition was to give the students of MPSTME a platform to showcase their innovative ideas and projects developed by them as well as encouraging discussions, interactions and exchange of newer ideas.
+Projects showcased included hydroponically grown plants, drone, collision detectors, data mapped vehicle to trace a particular path, electrically controlled skateboard, helmets with wipers for rains, a comprehensive event management system, etc. The competition consisted of the judges and the audience voting for their favorite project and the team with the maximum votes was awarded a cash prize of INR 5000.</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
 					</div>
 				</div>
@@ -777,7 +967,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 
 			<!-- Start events Area (Shashwat)-->
 
-			<script type="text/javascript">
+			<!--script type="text/javascript">
 				function showEventInfo(){
 					var x = document.getElementById("showinfo");
 					if(x.style.display === "none"){
@@ -834,50 +1024,131 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 					}
 					else { z.style.display = "none";
 				}}
-			</script>
+				function showEventInfo9(){
+					var z = document.getElementById("showinfo9");
+					if(z.style.display === "none"){
+						z.style.display = "block";
+					}
+					else { z.style.display = "none";
+				}}
+			</script-->
 
 			<section class="speaker-area section-gap" id="speaker" style="display: none;">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
-						<div class="col-md-8 pb-80 header-text">
+						<div class="col-md-12 pb-80 header-text">
 							<h1>Our Events</h1>
 							<!--p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.
 							</p-->
+							<div class="row">
+								<div class="col-lg-4 col-md-4 speaker-wrap">
+									<div class="single-speaker">
+										<div class="content">
+										    <a data-toggle="modal" href="#eventmodal">
+										      <!--div class="content-overlay"></div-->
+										  		 <img class="content-image img-fluid d-block mx-auto my-auto" src="img/edit 131-3-46.jpg" alt="">
+										      	<div class="content-details fadeIn-bottom"></div>
+										    </a>
+										 </div>
+									</div>
+								  	<h2>Enigma 3.0</h2>
+								  	<!--span id="showinfo" style="display: none;">With more than 180 students participating in Enigma, and contending for first and second place, the rewards for the same being a cash prize of Rs. 1000 and gift vouchers from our sponsors-McDonald’s, Titan and Bachelor Housing worth Rs. 1000 respectively, the main purpose of this event was to present a topic as serious as business and entrepreneurship in an interactive and enjoyable way through games and competitions
+		</span-->
+
+			<div class="modal fade" id="eventmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Enigma 3.0</h5>
+								<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+						</div>
+						<div class="modal-body">
+							<img src="img/edit 131-3-46.jpg" alt="" style="height:200px;width:100%">
+							<p>With more than 180 students participating in Enigma, and contending for first and second place, the rewards for the same being a cash prize of Rs. 1000 and gift vouchers from our sponsors-McDonald’s, Titan and Bachelor Housing worth Rs. 1000 respectively, the main purpose of this event was to present a topic as serious as business and entrepreneurship in an interactive and enjoyable way through games and competitions</p>
+						</div>
+						<!--div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div-->
+					</div>
+				</div>
+			</div>
+							</div>
+								<div class="col-lg-4 col-md-4 speaker-wrap">
+									<div class="single-speaker">
+										<div class="content">
+										    <a data-toggle="modal" href="#orientationmodal">
+										      <!--div class="content-overlay"></div-->
+										  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_3170.JPG" alt="">
+										      	<div class="content-details fadeIn-bottom"></div>
+										    </a>
+										 </div>
+									</div>
+								  	<h2>Orientation</h2>
+								  	<!--span id="showinfo2" style="display: none;">An interactive seminar to inform the student body about the vision and mission of the Innovation and Entrepreneurship Cell. The key purpose of the orientation was to introduce IEC as a cell to the student body, especially to the first year students of MPSTME. Particular emphasis was laid on the first collaboration between the two Cells, which resulted in a mammoth fest called Inceptio, now our flagship occurrence.</span-->
+										<div class="modal fade" id="orientationmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalLongTitle">Orientation</h5>
+															<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+													</div>
+													<div class="modal-body">
+														<img src="img/IMG_3170.JPG" alt="" style="height:200px;width:100%">
+														<p>An interactive seminar to inform the student body about the vision and mission of the Innovation and Entrepreneurship Cell. The key purpose of the orientation was to introduce IEC as a cell to the student body, especially to the first year students of MPSTME. Particular emphasis was laid on the first collaboration between the two Cells, which resulted in a mammoth fest called Inceptio, now our flagship occurrence</p>
+													</div>
+													<!--div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary">Save changes</button>
+													</div-->
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="col-lg-4 col-md-4 speaker-wrap">
+									<div class="single-speaker">
+										<div class="content">
+										   <a data-toggle="modal" href="#loemodal">
+										      <!--div class="content-overlay"></div-->
+										  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_0104.jpg" alt="">
+										      	<div class="content-details fadeIn-bottom"></div>
+										    </a>
+										 </div>
+									</div>
+								  	<h2>Life of An Entrepreneur</h2>
+								  	<!--span id="showinfo9" style="display: none;">An event enjoyed by the cricket maniacs of MPSTME, IPL Auctions are held every year. This event was held in two stages with the first stage acting as a qualifying round and consisted of two quizzes- the cricket quiz and the business quiz. The second stage was IPL Auctions wherein each team had a budget within which they had to buy cricket players and form their IPL teams following the traditional bidding method. </span-->
+										<div class="modal fade" id="loemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalLongTitle">Life of An Entrepreneur</h5>
+															<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+													</div>
+													<div class="modal-body">
+														<img src="img/IMG_0104.jpg" alt="" style="height:200px;width:100%">
+														<p>The key purpose of the second edition of Life of an Entrepreneur was to give to the students, a firsthand opportunity to meet and interact with two inspirational entrepreneurs and to gain insight into the highs and lows of their journey. The two guest speakers for this event were Yash Hisaria and Capt. Shalini Singh Bhadauria</p>
+													</div>
+													<!--div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary">Save changes</button>
+													</div-->
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
 					<div class="row">
-						<div class="col-lg-3 col-md-3 speaker-wrap">
-							<div class="single-speaker">
-								<div class="content">
-								    <a target="_blank" onclick="showEventInfo();">
-								      <!--div class="content-overlay"></div-->
-								  		 <img class="content-image img-fluid d-block mx-auto my-auto" src="img/edit 131-3-46.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom"></div>
-								    </a>
-								 </div>
-							</div>
-						  	<h2>Enigma</h2>
-						  	<span id="showinfo" style="display: none;">With more than 180 students participating in Enigma, and contending for first and second place, the rewards for the same being a cash prize of Rs. 1000 and gift vouchers from our sponsors-McDonald’s, Titan and Bachelor Housing worth Rs. 1000 respectively, the main purpose of this event was to present a topic as serious as business and entrepreneurship in an interactive and enjoyable way through games and competitions
-</span>
+						<div class="col-md-12 header-text">
+							<h1>Past Events</h1>
 						</div>
-						<div class="col-lg-3 col-md-3 speaker-wrap">
+						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a onclick="showEventInfo2();" target="_blank">
-								      <!--div class="content-overlay"></div-->
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_3170.JPG" alt="">
-								      	<div class="content-details fadeIn-bottom"></div>
-								    </a>
-								 </div>
-							</div>
-						  	<h2>Orientation</h2>
-						  	<span id="showinfo2" style="display: none;">An interactive seminar to inform the student body about the vision and mission of the Innovation and Entrepreneurship Cell. The key purpose of the orientation was to introduce IEC as a cell to the student body, especially to the first year students of MPSTME. Particular emphasis was laid on the first collaboration between the two Cells, which resulted in a mammoth fest called Inceptio, now our flagship occurrence.</span>
-						</div>
-						<div class="col-lg-3 col-md-3 speaker-wrap">
-							<div class="single-speaker">
-								<div class="content">
-								   <a onclick="showEventInfo3();" target="_blank">
+								   <a data-toggle="modal" href="#iplmodal">
 								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/_MG_9891.JPG" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
@@ -885,12 +1156,30 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								 </div>
 							</div>
 						  	<h2>IPL Auctions</h2>
-						  	<span id="showinfo3" style="display: none;">An event enjoyed by the cricket maniacs of MPSTME, IPL Auctions are held every year. This event was held in two stages with the first stage acting as a qualifying round and consisted of two quizzes- the cricket quiz and the business quiz. The second stage was IPL Auctions wherein each team had a budget within which they had to buy cricket players and form their IPL teams following the traditional bidding method. </span>
+						  	<!--span id="showinfo3" style="display: none;">An event enjoyed by the cricket maniacs of MPSTME, IPL Auctions are held every year. This event was held in two stages with the first stage acting as a qualifying round and consisted of two quizzes- the cricket quiz and the business quiz. The second stage was IPL Auctions wherein each team had a budget within which they had to buy cricket players and form their IPL teams following the traditional bidding method. </span-->
+								<div class="modal fade" id="iplmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">IPL Auctions</h5>
+													<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+											</div>
+											<div class="modal-body">
+												<img src="img/_MG_9891.JPG" alt="" style="height:200px;width:100%">
+												<p>An event enjoyed by the cricket maniacs of MPSTME, IPL Auctions are held every year. This event was held in two stages with the first stage acting as a qualifying round and consisted of two quizzes- the cricket quiz and the business quiz. The second stage was IPL Auctions wherein each team had a budget within which they had to buy cricket players and form their IPL teams following the traditional bidding method</p>
+											</div>
+											<!--div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div-->
+										</div>
+									</div>
+								</div>
 						</div>
-						<div class="col-lg-3 col-md-3 speaker-wrap">
+						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a onclick="showEventInfo4();" target="_blank">
+								    <a data-toggle="modal" href="#redmodal">
 								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_0217.JPG" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
@@ -898,30 +1187,68 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								 </div>
 							</div>
 						  	<h2>Redesyn</h2>
-						  	<span id="showinfo4" style="display: none;">This event was named after and dedicated to a startup called Redesyn, an apparel e-commerce service which curates Vegan and PETA approved designer clothing.
+						  	<!--span id="showinfo4" style="display: none;">This event was named after and dedicated to a startup called Redesyn, an apparel e-commerce service which curates Vegan and PETA approved designer clothing.
 A speaker session was conducted with the guests-Shikhar Vaidya and Smriti Dubey, the co-founders of Redesyn, who talked about their journey as entrepreneurs and the hardships they overcame in making Redesyn what it is today.
-</span>
+</span-->
+<div class="modal fade" id="redmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Redesyn</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/IMG_0217.JPG" alt="" style="height:200px;width:100%">
+				<p>This event was named after and dedicated to a startup called Redesyn, an apparel e-commerce service which curates Vegan and PETA approved designer clothing.
+A speaker session was conducted with the guests-Shikhar Vaidya and Smriti Dubey, the co-founders of Redesyn, who talked about their journey as entrepreneurs and the hardships they overcame in making Redesyn what it is today</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
+						</div>
+						<div class="col-lg-4 col-md-4 speaker-wrap">
+							<div class="single-speaker">
+								<div class="content">
+										<a data-toggle="modal" href="#conmodal">
+											<!--div class="content-overlay"></div-->
+											 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_0010.JPG" alt="" >
+												<div class="content-details fadeIn-bottom"></div>
+										</a>
+								 </div>
+							</div>
+								<h2>Converge</h2>
+								<!--span id="showinfo5" style="display: none;">The purpose of Converge was to make the students of MPSTME realise that there is more to the corporate world than what meets the eye and to act as a bridge between the students and the corporate world. In this informative session, students learnt all about derivative strategies and an in-depth Q&A session where you can cleared all doubts about the sector, it's various opportunities and challenges.
+It is indeed a gateway to the financial jungle!</span-->
+<div class="modal fade" id="conmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Converge</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/IMG_0010.JPG" alt="" style="height:200px;width:100%">
+				<p>The purpose of Converge was to make the students of MPSTME realise that there is more to the corporate world than what meets the eye and to act as a bridge between the students and the corporate world. In this informative session, students learnt all about derivative strategies and an in-depth Q&A session where you can cleared all doubts about the sector, it's various opportunities and challenges.
+It is indeed a gateway to the financial jungle!</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
 					</div>
 					<div class="row" style="padding-top: 3px">
-						<div class="col-lg-3 col-md-3 speaker-wrap">
+						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a onclick="showEventInfo5();" target="_blank">
-								      <!--div class="content-overlay"></div-->
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_0010.JPG" alt="">
-								      	<div class="content-details fadeIn-bottom"></div>
-								    </a>
-								 </div>
-							</div>
-						  	<h2>Converge</h2>
-						  	<span id="showinfo5" style="display: none;">The purpose of Converge was to make the students of MPSTME realise that there is more to the corporate world than what meets the eye and to act as a bridge between the students and the corporate world. In this informative session, students learnt all about derivative strategies and an in-depth Q&A session where you can cleared all doubts about the sector, it's various opportunities and challenges.
-It is indeed a gateway to the financial jungle!</span>
-						</div>
-						<div class="col-lg-3 col-md-3 speaker-wrap">
-							<div class="single-speaker">
-								<div class="content">
-								    <a onclick="showEventInfo6();" target="_blank">
+								    <a data-toggle="modal" href="#idmodal">
 								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/_DSC0001.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
@@ -929,12 +1256,30 @@ It is indeed a gateway to the financial jungle!</span>
 								 </div>
 							</div>
 						  	<h2>Idea Development</h2>
-						  	<span id="showinfo6" style="display: none;">The key purpose of this workshop was to inspire the students by explaining to them how ideas can be improved and developed. This purpose was well achieved as both the guest speakers enthralled and motivated the students by speaking about idea development in startups and entrepreneurship. The first event of the Innovation Cell, was a huge hit due to the speaker session with guest speakers Dr. Devesh Chawla, CEO of Chatur Ideas and Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’.</span>
+						  	<!--span id="showinfo6" style="display: none;">The key purpose of this workshop was to inspire the students by explaining to them how ideas can be improved and developed. This purpose was well achieved as both the guest speakers enthralled and motivated the students by speaking about idea development in startups and entrepreneurship. The first event of the Innovation Cell, was a huge hit due to the speaker session with guest speakers Dr. Devesh Chawla, CEO of Chatur Ideas and Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’.</span-->
+								<div class="modal fade" id="idmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">Idea Development</h5>
+													<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+											</div>
+											<div class="modal-body">
+												<img src="img/_DSC0001.jpg" alt="" style="height:200px;width:100%">
+												<p>TThe key purpose of this workshop was to inspire the students by explaining to them how ideas can be improved and developed. This purpose was well achieved as both the guest speakers enthralled and motivated the students by speaking about idea development in startups and entrepreneurship. The first event of the Innovation Cell, was a huge hit due to the speaker session with guest speakers Dr. Devesh Chawla, CEO of Chatur Ideas and Dr. Kaustubh Dhargalkar, Founder of ‘Potentials and Possibilities’</p>
+											</div>
+											<!--div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div-->
+										</div>
+									</div>
+								</div>
 						</div>
-						<div class="col-lg-3 col-md-3 speaker-wrap">
+						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-								    <a onclick="showEventInfo7();" data-toggle="lightbox">
+								    <a data-toggle="modal" href="#icrmodal">
 								      <!--div class="content-overlay"></div-->
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/IMG_2949.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom"></div>
@@ -942,14 +1287,33 @@ It is indeed a gateway to the financial jungle!</span>
 								 </div>
 							</div>
 						  	<h2>IC Resolutions</h2>
-						  	<span id="showinfo7" style="display: none;">IC Resolutions was a year round campaign aiming to nurture startup and project ideas of students with the motto being ‘Turn your resolutions to revelations’.
+						  	<!--span id="showinfo7" style="display: none;">IC Resolutions was a year round campaign aiming to nurture startup and project ideas of students with the motto being ‘Turn your resolutions to revelations’.
 The key purpose was to help students with creative and innovative ideas by taking regular follow ups from them, providing proper guidance and helping them attend seminars and workshops relevant to their startup and project ideas.
-</span>
+</span-->
+<div class="modal fade" id="icrmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">IC Resolutions</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/IMG_2949.jpg" alt="" style="height:200px;width:100%">
+				<p>IC Resolutions was a year round campaign aiming to nurture startup and project ideas of students with the motto being ‘Turn your resolutions to revelations’.
+The key purpose was to help students with creative and innovative ideas by taking regular follow ups from them, providing proper guidance and helping them attend seminars and workshops relevant to their startup and project ideas</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
-						<div class="col-lg-3 col-md-3 speaker-wrap">
+						<div class="col-lg-4 col-md-4 speaker-wrap">
 							<div class="single-speaker">
 								<div class="content">
-										<a onclick="showEventInfo8();" target="_blank">
+										<a data-toggle="modal" href="#itpmodal">
 											<!--div class="content-overlay"></div-->
 											 <img class="content-image img-fluid d-block mx-auto" src="img/_DSC0058.jpg" alt="">
 												<div class="content-details fadeIn-bottom"></div>
@@ -957,8 +1321,26 @@ The key purpose was to help students with creative and innovative ideas by takin
 								 </div>
 							</div>
 								<h2>Ideas to Prototype</h2>
-								<span id="showinfo8" style="display: none;">At the end of the IC Resolutions campaign, Ideas to Prototype acted as a closing event where the Faculty Mentor and President of the Innovation Cell gave a speech and had an informal discussion with the students about their project journeys and how they are planning to convert their ideas to prototypes in the vacations.
-</span>
+								<!--span id="showinfo8" style="display: none;">At the end of the IC Resolutions campaign, Ideas to Prototype acted as a closing event where the Faculty Mentor and President of the Innovation Cell gave a speech and had an informal discussion with the students about their project journeys and how they are planning to convert their ideas to prototypes in the vacations.
+</span-->
+<div class="modal fade" id="itpmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Ideas to Prototype</h5>
+					<!--span onclick="document.getElementById('eventmodal').style.display='none'">&times;</span-->
+			</div>
+			<div class="modal-body">
+				<img src="img/_DSC0058.jpg" alt="" style="height:200px;width:100%">
+				<p>At the end of the IC Resolutions campaign, Ideas to Prototype acted as a closing event where the Faculty Mentor and President of the Innovation Cell gave a speech and had an informal discussion with the students about their project journeys and how they are planning to convert their ideas to prototypes in the vacations</p>
+			</div>
+			<!--div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div-->
+		</div>
+	</div>
+</div>
 						</div>
 					</div>
 					</div>
@@ -1349,7 +1731,7 @@ The key purpose was to help students with creative and innovative ideas by takin
 								<p id='number'><strong>Simran Jain:</strong> +91 8349097715</p>
 						</div>
 						<div class="col-md-6 justify-content-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.949225132972!2d72.83535431508926!3d19.10988328706858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0xe0b9538d623ac5d2!2sMukesh+Patel+School+Of+Technology+Management+%26+Engineering!5e0!3m2!1sen!2sin!4v1538244050358" allowfullscreen class='map'></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9492251329716!2d72.83535431508926!3d19.109883287068588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0xe0b9538d623ac5d2!2sMukesh+Patel+School+Of+Technology+Management+%26+Engineering!5e0!3m2!1sen!2sin!4v1539885993678" allowfullscreen class="map"></iframe>
 					</div>
 					<div class="col-md-3 justify-content-center text-center">
 					<h4 id='contact'>Email</h4>
@@ -1993,5 +2375,6 @@ $('.owl-carousel').owlCarousel({
     }
 })
       </script>
+
 		</body>
 	</html>
