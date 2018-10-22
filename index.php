@@ -1045,7 +1045,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								<div class="col-lg-4 col-md-4 speaker-wrap">
 									<div class="single-speaker">
 										<div class="content">
-										    <a data-toggle="modal" href="#eventmodal">
+										    <a data-toggle="modal" href="#enigmamodal">
 										      <!--div class="content-overlay"></div-->
 										  		 <img class="content-image img-fluid d-block mx-auto my-auto" src="img/edit 131-3-46.jpg" alt="">
 										      	<div class="content-details fadeIn-bottom"></div>
@@ -1056,7 +1056,7 @@ Projects showcased included hydroponically grown plants, drone, collision detect
 								  	<!--span id="showinfo" style="display: none;">With more than 180 students participating in Enigma, and contending for first and second place, the rewards for the same being a cash prize of Rs. 1000 and gift vouchers from our sponsors-McDonald’s, Titan and Bachelor Housing worth Rs. 1000 respectively, the main purpose of this event was to present a topic as serious as business and entrepreneurship in an interactive and enjoyable way through games and competitions
 		</span-->
 
-			<div class="modal fade" id="eventmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
+			<div class="modal fade" id="enigmamodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -2375,6 +2375,71 @@ $('.owl-carousel').owlCarousel({
     }
 })
       </script>
+
+			<script type="text/javascript">
+			$(document).ready(function(){
+    // Hide the Modal when clicking on it again or outside
+    $("#enigmamodal").click(function(){
+        $("#enigmamodal").modal("hide");
+    });
+		$("#orientationmodal").click(function(){
+        $("#orientationmodal").modal("hide");
+    });
+		$("#loemodal").click(function(){
+        $("#loemodal").modal("hide");
+    });
+		$("#iplmodal").click(function(){
+        $("#iplmodal").modal("hide");
+    });
+		$("#redmodal").click(function(){
+        $("#redmodal").modal("hide");
+    });
+		$("#conmodal").click(function(){
+        $("#conmodal").modal("hide");
+    });
+		$("#idmodal").click(function(){
+        $("#idmodal").modal("hide");
+    });
+		$("#icrmodal").click(function(){
+        $("#icrmodal").modal("hide");
+    });
+		$("#itpmodal").click(function(){
+        $("#itpmodal").modal("hide");
+    });
+		$("#vcfmodal").click(function(){
+        $("#vcfmodal").modal("hide");
+    });
+		$("#itmodal").click(function(){
+        $("#itmodal").modal("hide");
+    });
+		$("#ssmodal").click(function(){
+        $("#ssmodal").modal("hide");
+    });
+		$("#imodal").click(function(){
+        $("#imodal").modal("hide");
+    });
+		$("#ivmodal").click(function(){
+        $("#ivmodal").modal("hide");
+    });
+		$("#bmodal").click(function(){
+        $("#bmodal").modal("hide");
+    });
+		$("#dmmodal").click(function(){
+        $("#dmmodal").modal("hide");
+    });
+		$("#ttmodal").click(function(){
+        $("#ttmodal").modal("hide");
+    });
+		$("#bqmodal").click(function(){
+        $("#bqmodal").modal("hide");
+    });
+		$("#lpcmodal").click(function(){
+        $("#lpcmodal").modal("hide");
+    });
+});
+
+</script>
+			</script>
 
 		</body>
 	</html>
