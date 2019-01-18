@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crowd Funding Registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <link rel="stylesheet" href="CFRegister.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div class="heading">
+  <h1>Crowd Funding Registration</h1>
+<p>Join us for a day of exciting events that develop skills and take your ideas to the next level.<br>With cash prizes to be won, and certificates of participation for all, what are you waiting for?<br>Register now!</p>
+</div>
+<div class="form">
+<form name="contact" action="https://script.google.com/macros/s/AKfycbwI5a9-Y9Ucu0a10Pxu0JQKKeJ4mUDwmeYpqkmC_XgQpOidqGk/exec" >
+  <input name="Name" type="text" placeholder="Team Leader Name" id="Name" required>  <br><br>
+<input name="Email" type="email" placeholder="Team Leader Email" required><br><br>
+  <input name="PhoneNum" type="tel" placeholder="Team Leader Contact Number" required><br>  <br>
+  <input name="College" type="text" placeholder="College Name" required>  <br><br>
+<input name="NoTeamMem" type="text" placeholder="Number of Team Members" required><br><br>
+<input name="Mem1Name" type="text" placeholder="Member 1 name" required><br><br>
+<input name="Mem1No" type="text" placeholder="Member 1 contact number" required><br><br>
+<input name="Mem2Name" type="text" placeholder="Member 2 name"><br><br>
+<input name="Mem2No" type="text" placeholder="Member 2 contact number"><br><br>
+<input name="Mem3Name" type="text" placeholder="Member 3 name"><br><br>
+<input name="Mem3No" type="text" placeholder="Member 3 contact number"><br><br>
+<input name="TeamName" type="text" placeholder="Team Name" required><br><br>
+<input name="IdeaName" type="text" placeholder="Idea Name" required><br><br>
+<input name="Description" type="text" placeholder="Summary" required><br><br>
+<div>Do you have any files to upload?<br></br><button class="YES" onclick="newFunction();">YES</button></div><br>
+<textarea  name="Message" placeholder="Your message here..."></textarea><br><br>
+  <button type="submit">SEND</button>
+ </form>
+</div>
+
+ <script type="text/javascript">
+    function newFunction(){
+      window.open("https://script.google.com/macros/s/AKfycbxndovuUVAkHfZVzzUjQEJqI-oZZ-zpASefYvdeLdq44G3Bs5Q/exec");
+    }
+  </script>
+
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz3r0E-6ieAw4PlJCsWAQ76VAwhNkoa09bYlZvZKomwm8npHYpQ/exec'
+  const form = document.forms['contact']
+  form.addEventListener('submit', e => {
+   e.preventDefault()
+   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+  })
+ </script>
+</body>
+</html>

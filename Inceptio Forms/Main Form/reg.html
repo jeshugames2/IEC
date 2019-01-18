@@ -1,0 +1,80 @@
+`<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="reg.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="form">
+  <h4>Register!</h4>
+<form name="contact">
+<span>Name</span>
+  <input name="Name" type="text" placeholder="" required> <br><br>
+<span>Email</span>
+<input name="Email" type="email" placeholder="" required><br><br>
+<span>Contact</span>
+  <input name="PhoneNum" type="tel" placeholder="" required><br>  <br>
+<span>College</span>
+  <input name="College" type="text" placeholder="" required>  <br><br>
+
+<input type="checkbox" name="Ideation" value="Yes"> <span>Ideation</span><br><br>
+
+<input type="checkbox" name="IdeaValid" value="Yes"> <span>Idea Validation</span> <br><br>
+
+<input type="checkbox" name="Startup" value="Yes"> <span>Startup Showcase</span> <br><br>
+
+<input type="checkbox" name="InceptioTalks" value="Yes"> <span>Inceptio Talks</span> <br><br>
+
+<input type="checkbox" name="Bplan" value="Yes"> <span>B-Plan Writing Workshop</span> <br><br>
+
+<input type="checkbox" name="DM" value="Yes"> <span>Digital Marketing Workshop</span> <br><br>
+
+<input type="checkbox" name="ThinkTank" value="Yes"> <span>Think Tank</span> <br><br>
+
+<input type="checkbox" name="Bizquiz" value="Yes"> <span>BizQuiz Competition</span> <br><br>
+
+<input type="checkbox" name="LiveProj" value="Yes"> <span>Live Project Competition</span> <br><br>
+
+<input type="checkbox" name="Creativity" value="Yes"> <span>Creativity Workshop</span> <br><br>
+
+<input type="checkbox" name="CF" value="Yes"> <span>Crowd Funding</span> <br><br>
+
+<textarea  name="Message" placeholder="Your message here..." style="font-size:19px;font-family:inherit;"></textarea><br><br>
+
+  <button type="submit">Send</button>
+
+ </form>
+
+ </div>
+ <script>
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbycF1T1y5_VkJLtVhpUGWcfMSxDfrGMUI7rlbulcvr1_YS3fHxI/exec'
+
+  const form = document.forms['contact']
+
+  form.addEventListener('submit', e => {
+
+   e.preventDefault()
+
+   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+    .then(response => console.log('Success!', response))
+
+    .catch(error => console.error('Error!', error.message))
+
+  })
+
+ </script>
+
+</body>
+
+</html>
+`
