@@ -1,0 +1,249 @@
+ <meta charset="UTF-8">
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+	<script type="text/javascript">
+
+
+			var voters ={
+				"9898989898":{
+							username: "yohaan",
+							pin: "town",
+							number: "9898989898",
+							money: 500
+						}
+			};
+
+			var ideas = {
+
+				aqua:{
+					codename: "aqua",
+					funding: 0
+
+				}
+
+			};
+
+	   	var config = {
+		    apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+		    authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+		    databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+		    projectId: "ictechnicalteamisthebest",
+		    storageBucket: "ictechnicalteamisthebest.appspot.com",
+		    messagingSenderId: "553171014592"
+	 	 };
+
+		  firebase.initializeApp(config);
+
+		  var database = firebase.database();
+
+		  function pushit(number,idea){
+
+
+
+				  	var pushitdata = window.voters[number];
+				  	var pushidea = window.ideas[idea];
+				  	var updates = {};
+					updates['/voters/' + number] = pushitdata;
+					updates['/ideas/' + idea] = pushidea;
+					// alert('Created Successfully');
+
+					return firebase.database().ref().update(updates);
+		  }
+
+
+
+	 // function pullit(){
+
+
+	  		var pinRef = firebase.database().ref("/voters/");
+			pinRef.once('value').then(function(snapshot){
+				var avoter =  snapshot.val();
+				window.voters = avoter;
+			});
+
+			var pinRef = firebase.database().ref("/ideas/");
+			pinRef.once('value').then(function(snapshot){
+				var anidea =  snapshot.val();
+				window.ideas = anidea;
+			});
+
+			for(var key in ideas){
+				var opt = document.createElement('option');
+				opt.value = key.codename;
+				opt.textContent = key.codename;
+				//document.getElementById("mySelect").appendChild(opt);
+	  		}
+
+
+	  //}
+
+	  //voters = pullit();
+
+	</script>
+	<script>
+	  // Initialize Firebase -->
+
+
+	  var myMoney;
+
+	  var myReturn = 0;
+
+	 // document.getElementById("out").style.display = "none";
+
+
+	function checkUser() {
+
+				  // var username = document.getElementById("username").value;
+
+
+				  var pin = document.getElementById("pin").value;
+				  var number = document.getElementById("number").value;
+				  var myPin = window.voters[number].pin;
+					var Uname = window.voters[number].name;
+					var User_Money = window.voters[number].money;
+				  var output = document.getElementsByClassName("output");
+				  	if(myPin==pin){
+				  		myReturn = 1;
+				  		alert("You are verified!");
+				  		document.getElementById("out").style.display = "block";
+							document.getElementById("HideLogin").style.display="none";
+							document.getElementById("Idea").style.display="none";
+							document.getElementById("HidePayment").style.display="none";
+							document.getElementById("Vote_Again").style.display="none";
+							document.getElementById("name").innerHTML = "Hi, " + Uname;
+							document.getElementById("userMoney").innerHTML = "My Money : " + User_Money;
+							document.getElementById("option").style.display = "block";
+
+							// window.location = 'VoterPay.html?number='+number+'&pin='+pin;
+				  	}
+				  	else{
+				  		myReturn = 0;
+				  		alert("Enter correct password!");
+				  	}
+		}
+
+		function about() {
+			//alert("You cliked About");
+			document.getElementById("HidePayment").style.display="none";
+			document.getElementById("Idea").style.display="block";
+		}
+
+		function vote() {
+			//alert("You clicked vote");
+			document.getElementById("Idea").style.display="none";
+			document.getElementById("HidePayment").style.display="block";
+		}
+
+		function letsVote(){
+
+					var number = document.getElementById("number").value;
+					var out = document.getElementById("out");
+
+					var codename = document.getElementById("codename").value;
+					var points = parseInt(document.getElementById("points").value);
+					var mymoney = parseInt(window.voters[number].money);
+
+					//out.style.display = "block";
+
+					//myList = document.getElementById("ideasList");
+					//alert(window.voters[number].money);
+            		// alert(points);
+            		// document.write(mymoney);
+					if(points > mymoney)
+					{
+					    alert("You Don't Have Enough Money !!");
+					}
+
+					else if (points < 0) {
+						alert("Please enter a value greater than 0.")
+					}
+
+					else if(points <= mymoney)
+					{
+                        mymoney-= points;
+						alert(mymoney);
+						alert("Transction succesful!");
+                        var myfunds = parseInt(window.voters[number].vote[codename]);
+                 
+
+                        alert("vote node exists");
+                        myfunds += points;
+                        alert("increment worked");
+                        window.voters[number].money = mymoney;
+                        alert("assigned decrement ");
+                        window.voters[number].vote[codename] = myfunds;
+                        alert("assigned increment value");
+
+
+
+                        pushit(number, codename);
+                        alert("push succesful");
+												//var sccs = "<p>Voting was succesful!</p>";
+												//document.getElementById("showit").innerHTML = sccs;
+												document.getElementById("HidePayment").style.display="none";
+												document.getElementById("Vote_Again").style.display="block";
+                        document.getElementById("userMoney").innerHTML = "My Money : " + mymoney;
+                      
+			
+
+					}
+					else {
+                        alert("You Don't Have Enough Money !! OR There IS some problem");
+					}
+
+		}
+
+
+		function voteagain() {
+			document.getElementById("HidePayment").style.display="block";
+            document.getElementById("Vote_Again").style.display="none";
+		}
+
+		  
+	/*<!-- // var showit = document.getElementById("showit");*/
+
+	// showit.innerHTML = voters; -->
+
+
+	var number=parseInt(document.getElementById("number"));
+	// var totalsinging=parseInt(window.voters[number].vote.sing);
+	var totalsinging = 0;
+	var totalrunning = 0;
+	var totalDancing = 0;
+	var i = 0;
+function cc(){
+	
+	for(i=1000000000; i<1000000031; i++)
+	{
+		totalsinging += parseInt(window.voters[i].vote.sing);
+		totalDancing += parseInt(window.voters[i].vote.dancing);
+		totalrunning += parseInt(window.voters[i].vote.running);
+	}
+		 
+
+		 // totalsinging += parseInt(window.voters[1000000000].vote.sing);
+		 // totalsinging += parseInt(window.voters[1000000000].vote.sing);
+		 // totalsinging += parseInt(window.voters[1000000000].vote.sing);
+		 // totalsinging += parseInt(window.voters[1000000000].vote.sing);
+		 // totalsinging += parseInt(window.voters[1000000000].vote.sing);
+		  alert("Singing : " + totalsinging + "\nRunning : " + totalrunning +"\nDancing : " + totalDancing);
+		  totalDancing = totalrunning = totalsinging = 0;
+
+}
+
+
+	</script>
+
+
+
+
+		<body>
+		<button id="userResults" onclick="cc()">
+			click me
+		</button>
+			<input maxlength="10" minlength="10" placeholder="mobile number" id="number" style="margin-bottom: 2%;width:90%!important;" type="text">
+
+
+
+
+
+	</body>

@@ -1,0 +1,84 @@
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+	<script type="text/javascript">
+
+
+		var voters ={
+				"9898989898":{
+							username: "yohaan",
+							pin: "town",
+							number: "9898989898",
+							money: 500
+						}
+			};
+
+			var ideas = {
+
+				aqua:{
+					codename: "aqua",
+					funding: 0
+
+				}
+
+			};
+			var vote = {
+
+				1111111111:{
+					dancing: 100,
+					running: 100,
+					sing: 100
+
+				}
+
+			};
+
+
+		var config = {
+		    apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+		    authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+		    databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+		    projectId: "ictechnicalteamisthebest",
+		    storageBucket: "ictechnicalteamisthebest.appspot.com",
+		    messagingSenderId: "553171014592"
+	 	 };
+
+		  firebase.initializeApp(config);
+
+		  var database = firebase.database();
+
+		  var pinRef = firebase.database().ref("/voters/");
+			pinRef.once('value').then(function(snapshot){
+				var avoter =  snapshot.val();
+				window.voters = avoter;
+			});
+
+			var pinRef = firebase.database().ref("/ideas/");
+			pinRef.once('value').then(function(snapshot){
+				var anidea =  snapshot.val();
+				window.ideas = anidea;
+			});
+
+
+	function clicked(){
+			var i= 1000000000;
+			var totalsinging = 0;
+			var totaldancing = 0;
+			var totalrunning = 0;
+			totalsinging += window.voters[1000000000].vote[sing];
+			for (;i<1000000004;i++)
+			{
+				totalsinging += window.voters[i].vote[sing];
+				totaldancing += window.voters[i].vote[dancing];
+				totalrunning += window.voters[i].vote[running]; 
+			}
+			
+		document.getElementById("userResults").innerHTML = "singing total funding: " + totalsinging + "running total funding: " + totalrunning + "dancing total funding: " + totaldancing ;
+
+	}
+
+	</script>
+
+	<body>
+		<input type="button" onclick="clicked()">
+			clik me
+		</input>
+	</body>

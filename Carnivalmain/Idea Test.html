@@ -1,0 +1,64 @@
+<head>
+
+</head>
+
+<body>
+
+	<h1>
+		Add your idea to the database:
+	</h1>
+
+	<input type="text" placeholder="unique codename" id="codename">
+
+	<input type="submit" onclick="newIdea()">
+
+	<script>
+voters ={
+				"9898989898":{
+							username: "yohaan",
+							pin: "town",
+							number: "9898989898",
+							money: 500
+						}
+			}
+
+		ideas ={
+
+				aqua:{
+					codename: "aqua",
+					funds: 0
+
+				}
+
+			}
+</script>
+
+	<script>
+
+
+
+
+
+		  function newIdea() {
+
+				  var codename = document.getElementById("codename").value;
+
+
+
+
+
+				  var ideaData = {
+				    codename: codename,
+				    funding: 0
+				  };
+
+				  ideas[codename] = ideaData;
+				  alert('Created Successfully');
+
+		}
+
+
+
+	</script>
+
+</body>
