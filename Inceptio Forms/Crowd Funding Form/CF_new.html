@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<link rel="stylesheet" href="Cf_newcss.css">
+<script>
+
+function getsupport()
+{
+  var x=document.getElementById("form2");
+  x.action="https://script.google.com/macros/s/AKfycbwI5a9-Y9Ucu0a10Pxu0JQKKeJ4mUDwmeYpqkmC_XgQpOidqGk/exec";
+x.submit() ;
+}
+
+</script>
+</head>
+
+<body>
+
+  <div class="form">
+      <h4>Inceptio Virtual Crowdfunding Registration Form</h4>
+    <span><p align="justify">Participate in Virtual Crowdfunding to win exciting cash prizes!<br>
+Send us your team details (max 4 people per team) and a description of what your start-up/proposed start-up is about.<br>The shortlisted teams will qualify for the final round, where a panel of judges and the audience will pitch in virtual funds to you, after your elevator pitch and answering their doubts on stage. The better your presentation skills and preparedness, the more your funds!
+The teams with maximum funds gathered will win actual cash prizes. What are you waiting for?
+<br>Date: 16 Feb, 2019
+<br>Venue: MPSTME, NMIMS Mumbai
+<br>Time: 6 pm onwards<br></p></span>
+
+  <form id="contact" action='https://script.google.com/macros/s/AKfycbz3r0E-6ieAw4PlJCsWAQ76VAwhNkoa09bYlZvZKomwm8npHYpQ/exec' method='post'>
+        <div class="tab">
+<span>Idea Name<font color="red">*</font></span><br>
+<label>(What is your idea domain/name?)</label><br>
+<input name="IdeaName" type="text" placeholder="Idea Name" required><br><br>
+
+<span>Team Name<font color="red">*</font></span><br>
+<input name="TeamName" type="text" placeholder="Team Name" required><br><br>
+
+<span>No. Of team members (maximum 4)<font color="red">*</font></span><br>
+<input name="NoTeamMem" type="text" placeholder="Number of Team Members" required><br><br>
+</div>
+    <div class="tab">
+<span>Team Leader Name<font color="red">*</font></span><br>
+    <input name="Name" type="text" placeholder="Team Leader Name" id="Name" required>  <br><br>
+
+    <span>Team Leader Email<font color="red">*</font></span><br>
+    <input name="Email" type="email" placeholder="Team Leader Email" required><br><br>
+
+<span>Team Leader Phone Number<font color="red">*</font></span><br>
+    <input name="PhoneNum" type="tel" placeholder="Team Leader Contact Number" required><br>  <br>
+    <span>Name of College<font color="red">*</font></span><br>
+    <input name="College" type="text" placeholder="College Name" required>  <br><br>
+</div>
+    <div class="tab">
+    <span>Member 1 Name</span><br>
+    <label>(Apart from Team Leader)</label><br>
+  <input name="Mem1Name" type="text" placeholder="Member 1 name" required><br><br>
+
+  <span>Member 1 Phone Number</span><br>
+  <input name="Mem1No" type="text" placeholder="Member 1 contact number" required><br><br>
+
+  <span>Member 2 Name</span><br>
+  <label>(Apart from Team Leader)</label><br>
+  <input name="Mem2Name" type="text" placeholder="Member 2 name"><br><br>
+
+  <span>Member 2 Phone Number</span><br>
+  <input name="Mem2No" type="text" placeholder="Member 2 contact number"><br><br>
+
+  <span>Member 3 Name</span><br>
+  <label>(Apart from Team Leader)</label><br>
+  <input name="Mem3Name" type="text" placeholder="Member 3 name"><br><br>
+
+  <span>Member 3 Phone Number</span><br>
+  <input name="Mem3No" type="text" placeholder="Member 3 contact number"><br><br>
+</div>
+    <div class="tab">
+  <span>Description of Idea (max 500 words)*</span><br>
+  <label>Note: In case you have a document with the description <b><font size="2px">(max 500 words)</font></b> of your idea then write "DRIVE" in the description below and proceed to the next step.</label><br>
+  <input name="Description" type="text" placeholder="Summary" required><br><br>
+</div>
+
+<div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+
+    <!--<input type="submit" id="myBtn" value="Submit">-->
+   </form>
+
+   <!--<div>Do you have any files to upload?<br>
+   <button class="YES" onclick="myFunction();">YES</button></div><br>-->
+<div id="formup">
+   <form id="form2" method="post" action="https://script.google.com/macros/s/AKfycbwI5a9-Y9Ucu0a10Pxu0JQKKeJ4mUDwmeYpqkmC_XgQpOidqGk/exec">
+       Upload a file
+       <input name="file" id="uploadfile" type="file">
+       <input type="submit" value="Upload">
+   </form>
+</div>
+  </div>
+
+
+  <script>
+
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbz3r0E-6ieAw4PlJCsWAQ76VAwhNkoa09bYlZvZKomwm8npHYpQ/exec'
+  // const scriptURL='https://script.google.com/macros/s/AKfycbwI5a9-Y9Ucu0a10Pxu0JQKKeJ4mUDwmeYpqkmC_XgQpOidqGk/exec'
+   const form = document.forms['contact']
+   form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     .then(response => console.log('Success!', response))
+     .catch(error => console.error('Error!', error.message))
+   })
+
+   var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  }
+   else {
+
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  }
+  else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+
+
+
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+//  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.forms['contact'].target='_blank';
+    document.getElementById("contact").submit();
+    document.getElementById("prevBtn").style.display= "none";
+    document.getElementById("nextBtn").style.display= "none";
+    return false;
+  }
+
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+$('#uploadfile').on("change", function() {
+    var file = this.files[0];
+    var fr = new FileReader();
+    fr.fileName = file.name
+    fr.onload = function(e) {
+        e.target.result
+        html = '<input type="hidden" name="data" value="' + e.target.result.replace(/^.,/, '') + '" >';
+        html += '<input type="hidden" name="mimetype" value="' + e.target.result.match(/^.*(?=;)/)[0] + '" >';
+        html += '<input type="hidden" name="filename" value="' + e.target.fileName + '" >';
+        $("#data").empty().append(html);
+    }
+    fr.readAsDataURL(file);
+});
+
+
+  </script>
+
+</body>
+
+</html>
+`
