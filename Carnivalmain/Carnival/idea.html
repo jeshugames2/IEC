@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+	<script>
+		var config = {
+			    apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+			    authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+			    databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+			    projectId: "ictechnicalteamisthebest",
+			    storageBucket: "ictechnicalteamisthebest.appspot.com",
+			    messagingSenderId: "553171014592"
+		 	 };
+
+		 firebase.initializeApp(config);
+
+		 var database = firebase.database();
+
+		 var pinRef = firebase.database().ref("/voters/");
+			pinRef.once('value').then(function(snapshot){
+			var avoter =  snapshot.val();
+			window.voters = avoter
+		 });
+
+		var pinRef = firebase.database().ref("/ideas/");
+			pinRef.once('value').then(function(snapshot){
+			var anidea =  snapshot.val();
+			window.ideas = anidea
+		});
+
+	 </script>
+</head>
+
+<body>
+
+	<h1>
+		Add your idea to the database:
+	</h1>
+
+	<input type="text" placeholder="unique codename" id="codename">
+
+	<input type="submit" onclick="newIdea()">
+
+	<!-- <script src="list.js"> alert("Submitted"); </script> -->
+
+	<script>
+
+		 // Initialize Firebase
+
+
+
+		  function newIdea() {
+					alert("Passed to new Ieda");
+				  var codename = document.getElementById("codename").value;
+
+
+
+
+		  alert("A post entry.");
+				  var ideaData = {
+						    codename: codename,
+						    funding: 0,
+						  };
+
+						  ideas[codename] = ideaData;
+						  alert('Created Successfully');
+
+						  pushit(codename);
+
+				}
+
+				  function pushit(codename){
+
+
+
+						  	var pushitdata = window.ideas;
+						  	var updates = {};
+							updates['/ideas/'+codename] = pushitdata;
+							alert('Created Successfully');
+
+							return firebase.database().ref().update(updates);
+			    }
+
+
+
+	</script>
+
+</body>
+
+</html>

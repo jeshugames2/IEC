@@ -1,0 +1,81 @@
+<head>
+	<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+</head>
+
+<body>
+	
+
+	<input type="text" placeholder="name" id="username" >
+	<input type="password" placeholder="passcode/mobile number" id="pin">
+	<input type="text" maxlength="10" minlength="10" placeholder="UID" id="number">
+	<input type="submit" onclick="newUser()">
+
+
+<script type="text/javascript">
+
+
+	var config = {
+		    apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+		    authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+		    databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+		    projectId: "ictechnicalteamisthebest",
+		    storageBucket: "ictechnicalteamisthebest.appspot.com",
+		    messagingSenderId: "553171014592"
+	 	 };
+
+		  firebase.initializeApp(config);
+
+		  var database = firebase.database();
+
+		  function pushit(number){
+
+
+
+				  	var pushitdata = window.voters[number];
+				  	var updates = {};
+					updates['/voters/'+number] = pushitdata;
+					alert('Created Successfully');
+
+					return firebase.database().ref().update(updates);
+		  }
+
+
+</script>
+	<script src="list.js"></script>
+	<script>
+
+	  function newUser() {
+
+				  var username = document.getElementById("username").value;
+				  var pin = document.getElementById("pin").value;
+				  var number = document.getElementById("number").value;
+				 
+				  var vote = {
+				    dancing:0,
+				    running: 0,
+				    sing: 0 
+				  };
+		  // A post entry.
+				  var userData = {
+				    name: username,
+				    number: number,
+				    pin: pin,
+				    money: 2500,
+					vote : vote
+				  };
+
+
+				 
+				  voters[number] = userData;
+				  alert('Created Successfully');
+
+				  pushit(number);
+
+			
+		}
+
+
+	</script>
+
+
+</body>

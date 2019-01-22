@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script type="text/javascript">
+
+
+    var voters = {
+        "9898989898": {
+            username: "yohaan",
+            pin: "town",
+            number: "9898989898",
+            money: 500
+        }
+    };
+
+    var ideas = {
+
+        aqua: {
+            codename: "aqua",
+            funding: 0
+
+        }
+
+    };
+    var vote = {
+
+        1111111111: {
+            dancing: 100,
+            running: 100,
+            sing: 100
+
+        }
+
+    };
+
+
+    var config = {
+        apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+        authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+        databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+        projectId: "ictechnicalteamisthebest",
+        storageBucket: "ictechnicalteamisthebest.appspot.com",
+        messagingSenderId: "553171014592"
+    };
+
+    firebase.initializeApp(config);
+
+    var database = firebase.database();
+
+    var pinRef = firebase.database().ref("/voters/");
+    pinRef.once('value').then(function (snapshot) {
+        var avoter = snapshot.val();
+        window.voters = avoter;
+    });
+
+    var pinRef = firebase.database().ref("/ideas/");
+    pinRef.once('value').then(function (snapshot) {
+        var anidea = snapshot.val();
+        window.ideas = anidea;
+    });
+
+
+    function clicked() {
+        var i = 1110000001;
+        var totalSmart_apps = 0;
+        var totalArtistik_Indiacom = 0;
+        var totalBharat_Osmo_energy = 0;
+        var totalDailyDawat = 0;
+        var totalHydrogens = 0;
+        var totalPharmsters = 0;
+        var totalSmart_Store = 0;
+        var totalSphero_Details = 0;
+        var totalTEC = 0;
+        var totalTSEC = 0;
+        var totalDisha = 0;
+        // totalSmart_apps = totalSmart_apps + window.voters[1000000000].vote.Smart_apps;
+//        for (i = 1110000001; i < 1110000009; i++) {
+//            totalSmart_apps += window.voters[i].vote.Smart_apps;
+//            // totalArtistik_Indiacom +=  window.voters[i].vote.Artistik_Indiacom;
+//            // totalBharat_Osmo_energy +=  window.voters[i].vote.Bharat_Osmo_energy;
+//            // totalDailyDawat +=  window.voters[i].vote.DailyDawat;
+//            // totalHydrogens +=  window.voters[i].vote.Hydrogens;
+//            // totalPharmsters +=  window.voters[i].vote.Pharmsters;
+//            // totalSmart_Store +=  window.voters[i].vote.Smart_Store;
+//            // totalSphero_Details +=  window.voters[i].vote.Sphero_Details;
+//            // totalTEC +=  window.voters[i].vote.TEC;
+//            // totalTSEC +=  window.voters[i].vote.TSEC;
+//        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalArtistik_Indiacom +=  window.voters[i].vote.Artistik_Indiacom;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalBharat_Osmo_energy += window.voters[i].vote.Bharat_Osmo_energy;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalDailyDawat += window.voters[i].vote.DailyDawat;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalHydrogens += window.voters[i].vote.Hydrogens;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalPharmsters += window.voters[i].vote.Pharmsters;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalSmart_Store += window.voters[i].vote.Smart_Store;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalSphero_Details += window.voters[i].vote.Sphero_Details;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalTEC += window.voters[i].vote.TEC;
+
+        }
+
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalTSEC += window.voters[i].vote.TSEC;
+        }
+
+        for (i = 1110000001; i < 1110000009; i++) {
+            totalDisha += window.voters[i].vote.Disha;
+        }
+
+
+
+
+        // document.getElementById("userResults").innerHTML = "singing total funding: " + totalsinging + "running total funding: " + totalrunning + "dancing total funding: " + totaldancing ;
+        document.getElementById("userResults").innerHTML = "Total Smart_apps = " + totalSmart_apps + "\n Total Artistik India.com = " + totalArtistik_Indiacom + "\n Total Bharat Osmo energy = " + totalBharat_Osmo_energy + "\n Total Daily Dawat = " + totalDailyDawat + "\n Total Hydrogens = " + totalHydrogens + "\n Total Pharmsters = " + totalPharmsters + "\n Total Smart_Store = " + totalSmart_Store + "\n Total Sphero Details = " + totalSphero_Details + "\n Total TEC = " + totalTEC + "\n Total TSEC = " + totalTSEC;
+    }
+
+</script>
+
+<body>
+<input type="button" value="Click me" onclick="clicked()">
+clik me
+</input>
+<div id="userResults"></div>
+</body>
+</html>

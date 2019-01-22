@@ -1,0 +1,90 @@
+<head>
+	<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+</head>
+
+<body>
+
+
+	<input type="text" maxlength="10" minlength="10" placeholder="UID" id="number">
+	<input type="text" placeholder="name" id="username" >
+	<input type="password" placeholder="passcode/mobile number" id="pin">
+	<input type="submit" onclick="newUser()">
+
+
+<script type="text/javascript">
+
+
+	var config = {
+		    apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+		    authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+		    databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+		    projectId: "ictechnicalteamisthebest",
+		    storageBucket: "ictechnicalteamisthebest.appspot.com",
+		    messagingSenderId: "553171014592"
+	 	 };
+
+		  firebase.initializeApp(config);
+
+		  var database = firebase.database();
+
+		  function pushit(number){
+
+
+
+				  	var pushitdata = window.voters[number];
+				  	var updates = {};
+					updates['/voters/'+number] = pushitdata;
+					alert('Created Successfully');
+
+					return firebase.database().ref().update(updates);
+		  }
+
+
+</script>
+	<script src="list.js"></script>
+	<script>
+
+	  function newUser() {
+				  var number = document.getElementById("number").value;
+				  var username = document.getElementById("username").value;
+				  var pin = document.getElementById("pin").value;
+
+
+				  var vote = {
+						Artistik_Indiacom:0,
+				    Bharat_Osmo_energy: 0,
+						DailyDawat: 0,
+						Hydrogens: 0,
+						Pharmsters: 0,
+						Smart_Store: 0,
+						Smart_apps: 0,
+						Sphero_Details: 0,
+						TEC: 0,
+						TSEC: 0,
+                      	Disha: 0
+
+				  };
+		  // A post entry.
+				  var userData = {
+				    name: username,
+				    number: number,
+				    pin: pin,
+				    money: 25001,
+					vote : vote
+				  };
+
+
+
+				  voters[number] = userData;
+				  alert('Created Successfully');
+
+				  pushit(number);
+
+
+		}
+
+
+	</script>
+
+
+</body>

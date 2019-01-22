@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+	<script>
+		var config = {
+			    apiKey: "AIzaSyDMXlxvMNGvaIO6muORFrwwqZPkIsnVhWQ",
+			    authDomain: "ictechnicalteamisthebest.firebaseapp.com",
+			    databaseURL: "https://ictechnicalteamisthebest.firebaseio.com",
+			    projectId: "ictechnicalteamisthebest",
+			    storageBucket: "ictechnicalteamisthebest.appspot.com",
+			    messagingSenderId: "553171014592"
+		 	 };
+
+		 firebase.initializeApp(config);
+
+		 var database = firebase.database();
+
+		 var pinRef = firebase.database().ref("/voters/");
+			pinRef.once('value').then(function(snapshot){
+			var avoter =  snapshot.val();
+			window.voters = avoter
+		 });
+
+		var pinRef = firebase.database().ref("/ideas/");
+			pinRef.once('value').then(function(snapshot){
+			var anidea =  snapshot.val();
+			window.ideas = anidea
+		});
+
+	 </script>
+</head>
+
+<body>
