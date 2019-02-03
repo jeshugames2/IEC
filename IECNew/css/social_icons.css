@@ -1,0 +1,118 @@
+.social-share{
+	width:200px;
+	height:auto;
+	margin:0;
+	padding:0;
+	position:fixed;
+	top:50%;
+	left:0;
+	transition:left 300ms ease-out
+}
+
+.social-share.hidden2{
+	left:-38px
+}
+
+.social-share.hidden2 li.hide-button a{
+	margin-left:28px;
+	border-radius:5px 0 0 5px;
+	text-align:left;transform:scale(-1, 1)
+}
+
+.social-share li{
+	list-style-type:none
+}
+
+.social-share li a{
+	display:block;
+	width:38px;
+	height:38px;
+	background:#222;
+	font:normal 16px/21px 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;color:#fff;
+	-webkit-font-smoothing:antialiased;
+	padding:10px;
+	text-decoration:none;
+	text-align:center;
+	transition:width 300ms ease-out, background 300ms ease-out
+}
+
+.social-share li a span{
+	display:block;
+	line-height:1;
+	font-size:13px;
+	font-weight:700
+}
+
+.social-share li a:hover{
+	width:42px
+}
+
+.social-share li:first-child a{
+	border-radius:0 5px 0 0
+}
+
+.social-share li:last-child a{
+	border-radius:0 0 5px 0
+}
+
+.social-share li.facebook a{
+	background:#3b5998
+}
+
+.social-share li.facebook a:hover,.social-share li.facebook a:focus{
+	background:#344e86
+}
+
+.social-share li.twitter a{
+	background:#00acee
+}
+
+.social-share li.twitter a:hover,.social-share li.twitter a:focus{
+	background:#009ad5
+}
+
+.social-share li.pinterest a{
+	background:#cc2127
+}
+
+.social-share li.pinterest a:hover,.social-share li.pinterest a:focus{
+	background:#b61d23
+}
+
+.social-share li.google-plus a{
+	background:#dd4b39
+}
+
+.social-share li.google-plus a:hover,.social-share li.google-plus a:focus{
+	background:#d73925
+}
+
+.social-share li.linkedin a{
+	background:#0077b5
+}
+
+.social-share li.linkedin a:hover,.social-share li.linkedin a:focus{
+	background:#00669c
+}
+
+.social-share li.buffer a{
+	background:#323b43
+}
+
+.social-share li.buffer a:hover,.social-share li.buffer a:focus{
+	background:#272e34
+}
+
+.social-share li.hide-button a{
+	height:24px;padding:0 10px;
+	background:#dedede;
+	font-size:13px;
+	line-height:24px;
+	color:#888;
+	transition:width 300ms ease-out, background 300ms ease-out, color 300ms ease-out, transform 300ms ease-out
+}
+
+.social-share li.hide-button a:hover{
+	background:#d1d1d1;
+	color:#666
+}
